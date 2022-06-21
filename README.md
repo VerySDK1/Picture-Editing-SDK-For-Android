@@ -23,4 +23,35 @@ reduces costs, and enables their own application products to be quickly launched
       <td>Language</td>
       <td>Support Chinese and English conversion, you can set the follow system</td>
    </tr>
+   <tr>
+        <td rowspan="6">Special Effect Camera</td>
+        <td>Setting</td>
+        <td>Self-defined shooting export settings</td>
+        <td>Self-define preset picture code rate and resolution</td>
+    </tr>
+    <tr>
+        <td>Countdown</td>
+        <td>Self-defined countdown shooting</td>
+        <td>Set countdown time interval, start shooting automatically</td>
+    </tr>
+    <tr>
+        <td>Flash</td>
+        <td>Open flash</td>
+        <td>Set flash on/off,  adjust picture light sensitivity</td>
+    </tr>
+    <tr>
+        <td>Switch</td>
+        <td>Switch front/rear camera</td>
+        <td>Set to switch front/rear camera to shoot</td>
+    </tr>
+    <tr>
+        <td>Filter</td>
+        <td>Configure filter</td>
+        <td>Set different filters to achieve expected effect</td>
+    </tr>
+    <tr>
+        <td>Beauty</td>
+        <td>Beauty setting</td>
+        <td>Set smooth skin, rosy, whiten, big eye, thin face, and face beauty.</td>
+    </tr>
 </table>      

@@ -6,9 +6,65 @@ reduces costs, and enables their own application products to be quickly launched
 ## SDK function introduction:
 <img align="left" width="33%" src="http://verysdk.com/static/picture_edit/1-1.jpg"></img>
 <img src="http://verysdk.com/static/icon/icon/icon-m1.png" width="30" height="30"></img>
- ***Spicial Efect Camera***
-  * Count Down
-  * Flash
-  * Switch
-  * Filter
-  * Beauty            
+<table>
+   <tr>
+      <td>module</td>
+      <td>Function Category</td>
+      <td>Function</td>
+      <td>Description</td>
+   </tr>
+   <tr>
+      <td>interface</td>
+      <td>Interface UI</td>
+      <td>Self-defined UI</td>
+      <td>The UI code is open source, and the UI interface and process can be customized</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>Language</td>
+      <td>Support Chinese and English conversion, you can set the follow system</td>
+   </tr>
+   <tr>
+      <td>Special Effect Camera</td>
+      <td>Setting</td>
+      <td>Self-defined shooting export settings</td>
+      <td>Self-define preset picture code rate and resolution</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>Countdown</td>
+      <td>Self-defined countdown shooting</td>
+      <td>Set countdown time interval, start shooting automatically</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>Flash</td>
+      <td>Open flash</td>
+      <td>Set flash on/off,  adjust picture light sensitivity</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>Switch</td>
+      <td>Switch front/rear camera</td>
+      <td>Set to switch front/rear camera to shoot</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>Filter</td>
+      <td>Configure filter</td>
+      <td>Set different filters to achieve expected effect</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>Beauty</td>
+      <td>Beauty setting</td>
+      <td>Set smooth skin, rosy, whiten, big eye, thin face, and face beauty.</td>
+   </tr>
+   <tr>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+   </tr>
+</table>      

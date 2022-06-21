@@ -3,9 +3,12 @@ VerySDK has created an open source UI and powerful picture editing SDK, includin
 photo beauty, filters, stickers, text, and picture flow. And so on, it provides a better experience for developers.
 Developers only need to call the core interface of the SDK to realize various picture edit effects, which greatly improves development efficiency,
 reduces costs, and enables their own application products to be quickly launched to the market.
+<p align="center" width="100%">
+    <img width="33%" src="http://verysdk.com/static/picture_edit/1-1.jpg"> 
+    <img width="33%" src="http://verysdk.com/static/picture_edit/3-3.jpg"> 
+    <img width="33%" src="http://verysdk.com/static/picture_edit/6-1.jpg"> 
+</p>
 ## SDK function introduction:
-<img align="left" width="33%" src="http://verysdk.com/static/picture_edit/1-1.jpg"></img>
-<img src="http://verysdk.com/static/icon/icon/icon-m1.png" width="30" height="30"></img>
 <table>
    <tr>
       <td>module</td>
@@ -54,4 +57,27 @@ reduces costs, and enables their own application products to be quickly launched
         <td>Beauty setting</td>
         <td>Set smooth skin, rosy, whiten, big eye, thin face, and face beauty.</td>
     </tr>
+   <!--  编辑  -->
+   <tr>
+      <td rowspan="43">Editing</td>  
+      <td rowspan="6">Background</td>
+      <td>Support replacing backgrounds</td>
+      <td>It only supports replacing photos with portraits, recognizes the subject portrait in the photo, and uses the cutout technology to replace the photo background as a whole.</td>
+   </tr>
+   <tr>
+      <td>Support local image background load</td>
+      <td>Support to call the specified picture from the mobile phone gallery as the background.</td>
+   </tr>
+   <tr>
+      <td>Support custom deployment background</td>
+      <td>The styles and types of background images can be expanded infinitely, and deployed online to the server for front-end utilities.</td>
+   </tr>
+    <tr>
+      <td>Adjust depth of field</td>
+      <td>The field depth value of the background can be adjusted.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+   </tr>
 </table>      

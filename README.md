@@ -60,7 +60,7 @@ reduces costs, and enables their own application products to be quickly launched
     </tr>
    <!--  编辑  -->
    <tr>
-      <td rowspan="45">Editing</td>  
+      <td rowspan="44">Editing</td>  
       <td rowspan="4">Background</td>
       <td>Support replacing backgrounds</td>
       <td>It only supports replacing photos with portraits, recognizes the subject portrait in the photo, and uses the cutout technology to replace the photo background as a whole.</td>

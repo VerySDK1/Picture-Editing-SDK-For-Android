@@ -187,7 +187,7 @@ reduces costs, and enables their own application products to be quickly launched
        <td>Set the filter and adjust the filter strength. Support customization and online configuration.</td>
    </tr>
    <tr>
-       <td rowspan="2">Toning</td>
+       <td rowspan="3">Toning</td>
        <td>	Light effect</td>
        <td>	Adjust the brightness, contrast, highlight, light sensitivity, shadow, and sepia value of the photo.</td>
    </tr>

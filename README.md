@@ -4,12 +4,13 @@ photo beauty, filters, stickers, text, and picture flow. And so on, it provides 
 Developers only need to call the core interface of the SDK to realize various picture edit effects, which greatly improves development efficiency,
 reduces costs, and enables their own application products to be quickly launched to the market.
 <p align="center" width="100%">
-    <img width="33%" src="http://verysdk.com/static/picture_edit/1-1.jpg"> 
-    <img width="33%" src="http://verysdk.com/static/picture_edit/3-3.jpg"> 
-    <img width="33%" src="http://verysdk.com/static/picture_edit/6-1.jpg"> 
+    <img width="33%" src="http://verysdk.com/static/picture_edit/1-1.jpg"></img>
+    <img width="33%" src="http://verysdk.com/static/picture_edit/3-3.jpg"></img> 
+    <img width="33%" src="http://verysdk.com/static/picture_edit/6-1.jpg"></img> 
 </p>
+
 ## SDK function introduction:
-<table>
+<table> 
    <tr>
       <td>module</td>
       <td>Function Category</td>
@@ -77,7 +78,78 @@ reduces costs, and enables their own application products to be quickly launched
       <td>The field depth value of the background can be adjusted.</td>
    </tr>
    <tr>
-      <td></td>
-      <td></td>
+      <td rowspan="4">Sky</td>
+      <td>Support replacing sky backgrounds</td>
+      <td>Automatically identify the part with the sky in the photo and replace it with the specified image.</td>
+   </tr>
+   <tr>
+       <td>Support to load local picture to be the background</td>
+       <td>Support to load the specified picture from the mobile phone gallery as the background.</td>
+   </tr>
+   <tr>
+       <td>Support custom deployment background</td>
+       <td>The styles and categories of material pictures can be expanded infinitely, and they can be deployed online to the server for front-end utilities.</td>
+   </tr>
+   <tr>
+       <td>Background adjustment</td>
+       <td>Zoom, rotate, move the background image</td>
+   </tr>
+   <tr>
+       <td rowspan="2">Add picture</td>
+       <td>	Support add picture</td>
+       <td>	Image layers can be added continuously to form a picture-in-picture effect</td>
+   </tr>
+   <tr>
+       <td>Picture adjustment</td>
+       <td>Zoom, rotate, move, copy pictures</td>
+   </tr>
+   <tr>
+       <td rowspan="4">Text</td>
+       <td>Text style</td>
+       <td>To make basic style operations to input text, such as color, transparency, stroke, shadow, background, alignment, spacing, etc.</td>
+   </tr>
+   <tr>
+       <td>Cursive font</td>
+       <td>Special effects for text can be set, which can be customized and configured online.</td>
+   </tr>
+   <tr>
+       <td>Material</td>
+       <td>Add a vivid background frame to your text, which can be customized and configured online.</td>
+   </tr>
+   <tr>
+       <td>Font</td>
+       <td>	Various font effects can be set and configured online.</td>
+   </tr>
+   <tr>
+       <td></td>
+       <td></td>
+   </tr>
+   <tr>
+       <td></td>
+       <td></td>
+   </tr>
+   <tr>
+       <td></td>
+       <td></td>
+   </tr>
+   <tr>
+       <td></td>
+       <td></td>
+   </tr>
+   <tr>
+       <td></td>
+       <td></td>
+   </tr>
+   <tr>
+       <td></td>
+       <td></td>
+   </tr>
+   <tr>
+       <td></td>
+       <td></td>
+   </tr>
+   <tr>
+       <td></td>
+       <td></td>
    </tr>
 </table>      

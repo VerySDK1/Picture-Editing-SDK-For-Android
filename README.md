@@ -61,7 +61,7 @@ reduces costs, and enables their own application products to be quickly launched
    <!--  编辑  -->
    <tr>
       <td rowspan="43">Editing</td>  
-      <td rowspan="6">Background</td>
+      <td rowspan="4">Background</td>
       <td>Support replacing backgrounds</td>
       <td>It only supports replacing photos with portraits, recognizes the subject portrait in the photo, and uses the cutout technology to replace the photo background as a whole.</td>
    </tr>
@@ -73,7 +73,7 @@ reduces costs, and enables their own application products to be quickly launched
       <td>Support custom deployment background</td>
       <td>The styles and types of background images can be expanded infinitely, and deployed online to the server for front-end utilities.</td>
    </tr>
-    <tr>
+   <tr>
       <td>Adjust depth of field</td>
       <td>The field depth value of the background can be adjusted.</td>
    </tr>
@@ -121,20 +121,22 @@ reduces costs, and enables their own application products to be quickly launched
        <td>	Various font effects can be set and configured online.</td>
    </tr>
    <tr>
-       <td></td>
-       <td></td>
+       <td rowspan="2">Material</td>
+       <td>Support add material</td>
+       <td>Various types of material pictures can be added to the photos, to enrich the picture effect. It can be customizable and online configured.</td>
    </tr>
    <tr>
-       <td></td>
-       <td></td>
+       <td>Material adjustment</td>
+       <td>Zoom, rotate, move, copy material images</td>
    </tr>
    <tr>
-       <td></td>
-       <td></td>
+       <td rowspan="2">Overlay</td>
+       <td>Support overlay effect</td>
+       <td>Adds a blend-mode screen on top of the underlying photo, it is customizable and configurable online.</td>
    </tr>
    <tr>
-       <td></td>
-       <td></td>
+       <td>Adjust</td>
+       <td>Overlay layers can be zoom, rotated, moved, copied.</td>
    </tr>
    <tr>
        <td></td>

@@ -139,19 +139,127 @@ reduces costs, and enables their own application products to be quickly launched
        <td>Overlay layers can be zoom, rotated, moved, copied.</td>
    </tr>
    <tr>
-       <td></td>
-       <td></td>
+       <td>Border</td>
+       <td>Support border configuration</td>
+       <td>Set different types borders and covers for your photos to quickly change the style. It is customizable and can do online configuration.</td>
    </tr>
    <tr>
-       <td></td>
-       <td></td>
+       <td rowspan="8">Beauty</td>
+       <td>One-click beauty</td>
+       <td>	According to the default optimal threshold, you can set the beauty effect with one click.</td>
    </tr>
    <tr>
-       <td></td>
-       <td></td>
+       <td>Adjust facial features</td>
+       <td>Can adjust the facial features of the photo portrait.</td>
    </tr>
    <tr>
-       <td></td>
-       <td></td>
+       <td>Smooth skin</td>
+       <td>	Adjustable skin texture for portraits.</td>
    </tr>
+   <tr>
+       <td>Whitening</td>
+       <td>Adjusts the whitening of faces in portraits.</td>
+   </tr>
+   <tr>
+       <td>Thin face</td>
+       <td>	Adjust the portrait face in the photo, switch and compare the effect with one click.</td>
+   </tr>
+   <tr>
+       <td>Big eyes</td>
+       <td>	Adjust the eyes size of the portrait in the photo, switch to compare the effect with one click.</td>
+   </tr>
+   <tr>
+       <td>Rosy</td>
+       <td>Adjusts the redness of portraits in photos.</td>
+   </tr>
+   <tr>
+       <td>Hair</td>
+       <td>Set different hair style for the portait</td>
+   </tr>
+   <tr>
+       <td>Keying</td>
+       <td>	Smart keying, manual keying</td>
+       <td>The portrait part in the picture can be cut out separately.</td>
+   </tr>
+   <tr>
+       <td>Filter</td>
+       <td>Support filter settings</td>
+       <td>Set the filter and adjust the filter strength. Support customization and online configuration.</td>
+   </tr>
+   <tr>
+       <td rowspan="2">Toning</td>
+       <td>	Light effect</td>
+       <td>	Adjust the brightness, contrast, highlight, light sensitivity, shadow, and sepia value of the photo.</td>
+   </tr>
+   <tr>
+       <td>Color</td>
+       <td>Adjust the saturation, color temperature, and hue of the photo.</td>
+   </tr>
+   <tr>
+       <td>Adjust</td>
+       <td>Adjust the graininess, sharpness and vignetting of the photo.</td>
+   </tr>
+   <tr>
+       <td rowspan="2">Crop</td>
+       <td>Self-defined crop</td>
+       <td>Can do picture crop mannually</td>
+   </tr>
+   <tr>
+       <td>Scale crop</td>
+       <td>	The photo frame can be cropped according to the specified ratio, such as: 4:3, 16:9, etc.</td>
+   </tr>   
+    <tr>
+       <td>Mask</td>
+       <td>Configure mask</td>
+       <td>	Self-define mask style per various shape, and set the feathering and inversion.</td>
+   </tr>
+   <tr>
+       <td>Brush</td>
+       <td>Support brush function</td>
+       <td>	You can freely doodle on photos, support rectangles, arrows, free brushes. Fallback function is supported.</td>
+   </tr>   
+    <tr>
+       <td>Remove watermark</td>
+       <td>	Support remove watermark function</td>
+        <td>You can use the brush to erase the image at the specified position to achieve the function of removing the original image.</td>
+   </tr>
+   <tr>
+       <td>Same style cut</td>
+       <td>	Create a picture of the same style according to the preset template</td>
+       <td>Templates can be customized, deployed online and used online, replaced specified material elements with one click, and quickly generated pictures with the same style as the template.</td>
+   </tr>   
+   <tr>
+       <td rowspan="7">Picture flow</td>
+       <td>The overall flow of layout pictures</td>
+       <td>The motion track can be set on the picture, so that the picture can move according to the set track. The range of the flow area can also be controlled by setting anchor points, freezing and other means.</td>
+   </tr>
+   <tr>
+       <td>Set picture entry animation</td>
+       <td>Add entry animation effects to photos, it is customizable and configurable online.</td>
+   </tr>   
+    <tr>
+       <td>Special effects</td>
+       <td>Add special effects to photos, it can be customized and configured online.</td>
+   </tr>
+   <tr>
+       <td>Audio</td>
+       <td>Add background audio, it is customizable and configurable online.</td>
+   </tr>   
+   <tr>
+       <td>Basic editing functions</td>
+       <td>Editing operations such as filters, text, color correction, stickers, etc. can be set.</td>
+   </tr>
+   <tr>
+       <td>Video export</td>
+       <td>Video files can be exported, and the resolution and frame rate can be set before exporting.</td>
+   </tr>   
+    <tr>
+       <td>Export GIF file</td>
+       <td>GIF files can be exported, and the resolution and frame rate can be set before exporting, without audio.</td>
+   </tr>
+   <tr>
+       <td>Draft box</td>
+       <td>Save draft</td>
+       <td>The entire editing process is automatically saved in the draft box, and you can directly import it from the draft box for editing next time.</td>
+   </tr>   
 </table>      

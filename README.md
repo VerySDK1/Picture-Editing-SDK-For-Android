@@ -130,7 +130,7 @@ reduces costs, and enables their own application products to be quickly launched
        <td>Zoom, rotate, move, copy material images</td>
    </tr>
    <tr>
-       <td rowspan="2">Overlay</td>
+       <td rowspan="3">Overlay</td>
        <td>Support overlay effect</td>
        <td>Adds a blend-mode screen on top of the underlying photo, it is customizable and configurable online.</td>
    </tr>

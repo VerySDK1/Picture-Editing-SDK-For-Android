@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="camera_menu_height">250dp</dimen>
+    <dimen name="camera_filter_height">300dp</dimen>
+
+</resources>

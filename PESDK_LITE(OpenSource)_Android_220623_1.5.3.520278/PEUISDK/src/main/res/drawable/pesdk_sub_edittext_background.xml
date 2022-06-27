@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 边框线 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <solid android:color="@color/pesdk_style_bg"/>
+
+    <corners android:radius="3dp"/>
+
+</shape>

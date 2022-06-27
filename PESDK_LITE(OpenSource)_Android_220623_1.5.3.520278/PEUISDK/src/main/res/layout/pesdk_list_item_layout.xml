@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_60"
+    android:layout_height="@dimen/dp_60"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.pesdk.uisdk.widget.ExtRoundRectSimpleDraweeView xmlns:roundView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ivItemImage2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        roundView:roundRectBorderWidth="@dimen/dp_2"
+        roundView:roundRectCheckColor="@color/pesdk_main_press_color"
+        roundView:roundRectChecked="false"
+        roundView:roundRectProgressColor="@color/pesdk_main_press_color"
+        roundView:roundRectRadius="5dp" />
+
+    <com.vecore.base.lib.ui.ExtTextView
+        android:id="@+id/tvItemCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp_1"
+        android:layout_marginRight="@dimen/dp_1"
+        android:layout_marginBottom="@dimen/dp_1"
+        android:background="@drawable/pesdk_shape_layer_item_menu_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/dp_3"
+        android:singleLine="true"
+        android:textColor="@color/pesdk_white"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/text_size_10" />
+
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pesdk_shape_downloading"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.pesdk.uisdk.widget.RoundProgressBar xmlns:roundView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center"
+            roundView:roundColor="@color/pesdk_transparent_black"
+            roundView:roundProgressColor="@color/pesdk_main_press_color"
+            roundView:roundWidth="@dimen/dp_4"
+            roundView:textColor="@color/pesdk_white"
+            roundView:textIsDisplayable="true"
+            roundView:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion compileSdkVer
+    defaultConfig {
+        minSdkVersion minSdkVer
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['src/main/assets']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled releaseMinify
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+
+    resourcePrefix 'pesdk_'
+}
+
+dependencies {
+    api project(':VECore')
+    api project(':PECommon')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api 'androidx.cardview:cardview:1.0.0'
+
+    //mnn https://github.com/alibaba/MNNKit
+    api('com.alibaba.android.mnnkit:facedetection:0.0.5') {
+        exclude group: 'com.android.support'
+    }
+    //谷歌 人脸识别、分割
+    implementation 'com.google.mlkit:face-detection:16.1.5'
+    implementation 'com.google.mlkit:segmentation-selfie:16.0.0-beta4'
+
+}

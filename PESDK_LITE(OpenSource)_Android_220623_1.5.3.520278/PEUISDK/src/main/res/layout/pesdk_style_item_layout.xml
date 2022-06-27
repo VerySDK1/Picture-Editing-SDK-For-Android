@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,4:3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.pesdk.uisdk.widget.ExtListItemStyle
+            android:id="@+id/item_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@null"
+            app:extBorderLineWidth="2dp"
+            app:extBorderRoundRadius="3dp" />
+
+
+        <ImageView
+            android:id="@+id/sdv_src"
+            style="@style/pesdk_effectAniButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@null" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/ttf_state"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_gravity="center|bottom"
+                android:layout_margin="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pesdk_ic_down"
+                android:visibility="gone" />
+
+            <com.pesdk.uisdk.widget.CircleProgressBarView
+                android:id="@+id/ttf_pbar"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_gravity="center|bottom"
+                android:layout_margin="3dp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

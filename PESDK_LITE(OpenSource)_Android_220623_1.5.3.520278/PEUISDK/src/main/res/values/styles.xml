@@ -1,0 +1,286 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="pesdk_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/pesdk_dialog_trans</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/pesdk_dialogNoAnimation</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@drawable/pesdk_dialog_trans</item>
+    </style>
+
+    <style name="pesdk_dialogNoAnimation" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="pesdk_priview_text_style">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/pesdk_white</item>
+    </style>
+
+    <style name="pesdk_menu_style" parent="@style/pesdk_priview_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">55dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="pesdk_edit_menu" parent="@style/pesdk_menu_style">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:drawablePadding">-3dp</item>
+        <item name="android:textColor">@drawable/pesdk_edit_menu_color</item>
+    </style>
+
+    <style name="pesdk_dialogNoDim" parent="pesdk_dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="pesdk_alert_dialog_bg_style">
+        <item name="android:background">@drawable/pesdk_alert_dialog_bg</item>
+    </style>
+
+    <style name="pesdk_alert_listview_dialog_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/pesdk_alert_button_text_color</item>
+        <item name="android:textSize" tools:ignore="SpUsage">@dimen/text_size_16</item>
+    </style>
+
+    <style name="pesdk_alert_dialog_positive_btn_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/pesdk_alert_button_text_color</item>
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+    </style>
+
+    <style name="pesdk_selectDialog" parent="pesdk_dialog">
+        <item name="android:windowBackground">@drawable/pesdk_alert_dialog_bg</item>
+        <item name="android:maxWidth">300dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pesdk_listviewDialog" parent="pesdk_dialog">
+        <item name="android:windowAnimationStyle">@style/pesdk_listviewDialogAnimation</item>
+        <item name="android:windowBackground">@color/pesdk_transparent</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="pesdk_listviewDialogAnimation" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/pesdk_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/pesdk_slide_out</item>
+    </style>
+
+    <style name="pesdk_list_alert_cancel_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/pesdk_alert_button_text_color</item>
+        <item name="android:textSize" tools:ignore="SpUsage">@dimen/text_size_16</item>
+    </style>
+
+
+    <style name="pesdk_2_priview_text_style">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/pesdk_white</item>
+    </style>
+
+
+    <style name="pesdk_2_menu_style" parent="@style/pesdk_2_priview_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">55dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="pesdk_2_edit_menu" parent="@style/pesdk_2_menu_style">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/dp_30</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@drawable/pesdk_edit_menu_color</item>
+        <item name="android:drawablePadding">-5dp</item>
+    </style>
+
+    <style name="pesdk_adjust_item_style" parent="@style/pesdk_2_edit_menu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/dp_55</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="pesdk_filter_config_sbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">50</item>
+    </style>
+
+    <style name="pesdk_rb_proportion_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="pesdk_effectAniButtonStyle">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- 字幕菜单 -->
+    <style name="pesdk_subtitle_menu_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@drawable/pesdk_edit_menu_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="pesdk_sub_menu_rbtn_style" parent="@style/pesdk_subtitle_menu_style">
+        <item name="android:textColor">@drawable/pesdk_sub_menu_text_color</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">0sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pesdk_sub_menu_x_rbtn_style" parent="@style/pesdk_sub_menu_rbtn_style">
+        <item name="android:textColor">@drawable/pesdk_sub_menu_x_textcolor</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="pesdk_sbar_base_style">
+        <item name="android:thumb">@drawable/pesdk_config_sbar_thumb_n</item>
+        <item name="android:progressDrawable">@drawable/pesdk_editor_progress</item>
+        <item name="android:thumbOffset">@dimen/dp_20</item>
+        <item name="android:splitTrack">false</item>
+        <item name="android:max">100</item>
+    </style>
+
+
+    <!-- 主编辑-二级菜单 容器size-->
+
+
+    <style name="pesdk_main_menu_rb">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/pesdk_shape_menu_rb</item>
+        <item name="android:textColor">@color/pesdk_white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:paddingLeft">@dimen/dp_20</item>
+        <item name="android:paddingTop">@dimen/dp_5</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+        <item name="android:paddingRight">@dimen/dp_20</item>
+    </style>
+
+    <style name="pesdk_main_menu_edit_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="pesdk_item_rect_adjust">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="pesdk_beauty_menu_item">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@drawable/pesdk_edit_menu_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">-2dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="pesdk_pop_add_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_50</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@drawable/pesdk_edit_menu_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">-8dp</item>
+        <item name="android:layout_margin">@dimen/dp_5</item>
+    </style>
+
+    <style name="pesdk.tabTextAppearance" parent="@style/TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/pesdk_main_text_color_n</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="pesdk.TabLayout" parent="android:Widget.Material.Tab">
+        <!--背景色-->
+        <item name="tabBackground">@color/pesdk_transparent</item>
+        <!--被选中时线的颜色-->
+        <item name="tabIndicatorColor">@color/pesdk_transparent</item>
+        <!--线的高度-->
+        <item name="tabIndicatorHeight">3dp</item>
+        <!--文字默认属性-->
+        <item name="tabTextAppearance">@style/pesdk.tabTextAppearance</item>
+        <!--选中的字体颜色-->
+        <item name="tabSelectedTextColor">@color/pesdk_main_color</item>
+        <!--取消按压阴影-->
+        <item name="tabRippleColor">@color/pesdk_transparent</item>
+        <item name="tabMinWidth">@dimen/dp_40</item>
+    </style>
+
+    <style name="pesdk_sub_rb_menu">
+        <item name="android:paddingLeft">@dimen/dp_6</item>
+        <item name="android:paddingTop">@dimen/dp_2</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+        <item name="android:paddingRight">@dimen/dp_6</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@drawable/pesdk_sub_rb_bg</item>
+        <item name="android:drawablePadding">@dimen/dp_5</item>
+        <item name="android:drawableBottom">@drawable/pesdk_shape_sub_style_menu_bg</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="pesdk_sub_shadow_value">
+        <item name="android:layout_width">@dimen/dp_40</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:text">0</item>
+        <item name="android:textColor">@color/pesdk_child_main_text_color_n</item>
+    </style>
+
+    <style name="pesdk_sub_shadow_menu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/dp_50</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/pesdk_child_main_text_color_n</item>
+    </style>
+
+
+</resources>

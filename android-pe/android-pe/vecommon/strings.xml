@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="common_sure">确定</string>
+    <string name="common_cancel">取消</string>
+    <!--图片描述-->
+    <string name="common_desc">图片</string>
+    <!--加载中-->
+    <string name="common_loading">加载中&#8230;</string>
+    <string name="common_loading_error">加载失败&#8230;</string>
+
+    <!--权限-->
+    <string name="common_permission_title">需要申请的权限</string>
+    <string name="common_permission_cancel">取消权限申请</string>
+
+    <!--网络-->
+    <string name="common_check_network">没有可用的网络</string>
+    <string name="common_many_failures_url_none">失败次数过多或地址为空</string>
+    <string name="common_many_downloads_currently">当前下载内容过多</string>
+    <string name="common_downloading">下载中&#8230;</string>
+
+    <!--弹窗-->
+    <string name="common_dialog_title">温馨提示</string>
+    <string name="common_dialog_message_permission">请打开权限</string>
+    <string name="common_authorization">授权</string>
+    <string name="common_exit">退出</string>
+
+</resources>

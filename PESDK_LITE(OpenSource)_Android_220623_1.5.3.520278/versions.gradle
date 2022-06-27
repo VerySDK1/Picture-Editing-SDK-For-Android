@@ -1,0 +1,19 @@
+ext {
+    kotlin_version = '1.4.32'
+    compileSdkVer = 30
+    buildToolsVer = '30.0.3'
+    minSdkVer = 21
+    targetSdkVer = 30
+}
+
+
+def addRepos(RepositoryHandler handler) {
+    handler.maven { url 'https://maven.aliyun.com/repository/google' }
+    handler.maven { url 'https://maven.aliyun.com/repository/public' }
+    handler.maven { url 'https://maven.aliyun.com/repository/central' }
+    handler.maven { url 'https://www.jitpack.io' }
+//    https://developer.aliyun.com/mvn/guide
+}
+
+ext.addRepos = this.&addRepos
+

@@ -1,0 +1,335 @@
+﻿<resources> 
+    <string name="pesdk_menu_template">Template recipe</string>
+    <string name="pesdk_beauty">Portrait</string>
+    <string name="pesdk_segment">Cutout</string>
+    <string name="pesdk_erase_pen">Erase pen</string>
+    <string name="pesdk_filter">Filter</string>
+    <string name="pesdk_proportion">Proportion</string>
+    <string name="pesdk_layer_merge">Layer merging</string>
+    <string name="pesdk_layer_adjust">Layer adjust</string>
+    <string name="pesdk_crop">Crop</string>
+    <string name="pesdk_text">Text</string>
+    <string name="pesdk_pip">Layer</string>
+    <string name="pesdk_canvas">Background</string>
+    <string name="pesdk_sky">Sky</string>
+    <string name="pesdk_import">Add image</string>
+    <string name="pesdk_adjust">Tone</string>
+    <string name="pesdk_background">Background</string>
+    <string name="pesdk_save">Save</string>
+    <string name="pesdk_sticker">Material</string>
+    <string name="pesdk_pic">Picture</string>
+    <string name="pesdk_frame">Border</string>
+    <string name="pesdk_depth">Scene depth</string>
+
+    <string name="pesdk_mosaic">Mosaic</string>
+    <string name="pesdk_blur">Blur</string>
+    <string name="pesdk_aperture">Aperture</string>
+    <string name="pesdk_hdr">HDR</string>
+    <string name="pesdk_holy_light">Holy light</string>
+    <string name="pesdk_watermark">Watermark</string>
+
+
+    <string name="pesdk_strength">Strength</string>
+
+
+    <string name="pesdk_materialcolorpicker__errHex">Wrong color value</string>
+    <string name="pesdk_materialcolorpicker__btnSelectColor">Select</string>
+    <string name="pesdk_saving_image">Saving image...</string>
+    <string name="pesdk_save_error">Fail to save image</string>
+    <string name="preview_error">Can not preview, please try again!</string>
+    <string name="pesdk_exit_without_save">Edit image not saved, sure to exit?</string>
+    <string name="pesdk_confirm">Confirm</string>
+    <string name="pesdk_cancel">Cancel</string>
+    <string name="pesdk_next">Next</string>
+
+
+    <string name="pesdk_paint">Paint</string>
+    <string name="pesdk_doodling">Brush</string>
+    <string name="pesdk_koutu">Intelligent cutout</string>
+    <string name="pesdk_segment_ing">Recognizing</string>
+    <string name="pesdk_segment_faster">Mannual cutout</string>
+    <string name="pesdk_segment_rubber">\t Rubber</string>
+    <string name="pesdk_segment_reset">Reset</string>
+
+
+    <string name="pesdk_segment_no_mask">Area not selected, can not cutout</string>
+
+
+    <string name="pesdk_none">Null</string>
+
+
+    <string name="pesdk_beauty_auto">One key beauty</string>
+    <string name="pesdk_fu_wuguan">Facial features</string>
+    <string name="pesdk_fu_blue">Smooth skin</string>
+    <string name="pesdk_fu_whitening">Whitening</string>
+    <string name="pesdk_fu_ruddy">Ruddy</string>
+    <string name="pesdk_fu_freckle">Freckle</string>
+    <string name="pesdk_fu_bigeye">Big eye</string>
+    <string name="pesdk_fu_facelift">Thin face</string>
+
+
+    <!-- Beauty-->
+    <string name="face_recognition_failed">Face not detected</string>
+    <string name="pesdk_menu_layer">Layer</string>
+
+
+    <string name="pesdk_toning_reset">Restore</string>
+    <string name="pesdk_toning_diff">Compare</string>
+    <string name="pesdk_toning_reset_msg">Sure to reset?</string>
+    <string name="pesdk_toning_diff_msg">Original effect</string>
+
+    <string name="pesdk_filter_brightness">Brightness</string>
+    <string name="pesdk_filter_contrast">Contrast</string>
+    <string name="pesdk_filter_highlight">High light</string>
+    <string name="pesdk_filter_guanggan">Light sense</string>
+    <string name="pesdk_filter_shadow">Shadow</string>
+    <string name="pesdk_filter_hese">Brown</string>
+    <string name="pesdk_filter_unknow">Unkown</string>
+
+
+    <string name="pesdk_filter_saturation">Saturation</string>
+    <string name="pesdk_filter_temperature">Temperature</string>
+    <string name="pesdk_filter_tone">Tone</string>
+
+
+    <string name="pesdk_filter_keli">Grain</string>
+    <string name="pesdk_filter_sharpness">Sharpness</string>
+    <string name="pesdk_filter_vignette">Dim corner</string>
+
+
+    <string name="pesdk_dialog_tips">Soft reminder</string>
+    <string name="pesdk_sure">Confirm</string>
+    <string name="pesdk_cancel_all_changed">Sure to cancel all？</string>
+
+
+    <string name="pesdk_mirror">Mirror image</string>
+
+
+    <string name="pesdk_please_check_network">No available network</string>
+    <string name="pesdk_dialog_download_ing">Downloading...</string>
+    <string name="pesdk_dialog_loading_model">Loading model...</string>
+    <string name="pesdk_download_thread_limit_msg">Please wait...</string>
+
+    <string name="pesdk_isloading">Loading....</string>
+
+    <string name="pesdk_loading">Loading</string>
+    <string name="pesdk_process">Processing</string>
+    <string name="pesdk_sub_hint">Input text</string>
+
+    <string name="pesdk_sub_menu_input">Keyboard</string>
+    <string name="pesdk_sub_menu_style">Style</string>
+    <string name="pesdk_sub_menu_bubble">Material</string>
+    <string name="pesdk_sub_menu_flower_word">Flower word</string>
+    <string name="pesdk_sub_menu_font">Font</string>
+
+    <!-- Subtitle -->
+    <string name="pesdk_text_style_bold">Bold</string>
+    <string name="pesdk_text_style_italic">Italic</string>
+    <string name="pesdk_text_style_b_line">Underline</string>
+    <string name="pesdk_subtitle_alpha">Transparency</string>
+    <!--Shadow-->
+    <string name="pesdk_radius">Radius</string>
+    <string name="pesdk_subtitle_shadow_width">Distance</string>
+
+    <string name="pesdk_demark_paint">Brush</string>
+    <string name="pesdk_subtitle_text">Text</string>
+    <string name="pesdk_subtitle_label">Background</string>
+    <string name="pesdk_subtitle_align">Align</string>
+    <string name="pesdk_subtitle_text_padding">Spacing</string>
+
+    <string name="pesdk_line_spacing">Line space</string>
+    <string name="pesdk_word_kerning">Word space</string>
+
+
+    <string name="pesdk_subtitle_stroke">Stroke</string>
+
+
+    <string name="pesdk_default_ttf"> Default font</string>
+
+
+    <string name="pesdk_beauty_face_shape">Face shape</string>
+    <string name="pesdk_beauty_chin">Chin</string>
+    <string name="pesdk_beauty_chin_width">Chin width</string>
+    <string name="pesdk_beauty_chin_height">Chin height</string>
+    <string name="pesdk_beauty_forehead">Forehead</string>
+    <string name="pesdk_beauty_nose">Nose</string>
+    <string name="pesdk_beauty_nose_width">Nose width</string>
+    <string name="pesdk_beauty_nose_height">Nose height</string>
+    <string name="pesdk_beauty_smile">Smile</string>
+    <string name="pesdk_beauty_eye">Eye</string>
+    <string name="pesdk_beauty_eye_tilt">Tilt</string>
+    <string name="pesdk_beauty_eye_distance">Distance</string>
+    <string name="pesdk_beauty_eye_width">Width</string>
+    <string name="pesdk_beauty_eye_height">Height</string>
+    <string name="pesdk_beauty_mouth">Mouth</string>
+    <string name="pesdk_beauty_mouth_upper">Upper lip</string>
+    <string name="pesdk_beauty_mouth_lower">Lower lip</string>
+    <string name="pesdk_beauty_mouth_width">Mouth width</string>
+
+
+    <string name="pesdk_angle">Angle</string>
+
+
+    <!-- Layer-->
+    <string name="pesdk_mixed_mode">Mixed model</string>
+    <string name="pesdk_cutout">Cutout</string>
+
+
+    <!-- Mask-->
+    <string name="pesdk_mask">Shape/Fill</string>
+    <string name="pesdk_emergence">Feathering</string>
+    <string name="pesdk_mask_width">Thickness</string>
+    <string name="pesdk_mask_line">Linear</string>
+    <string name="pesdk_mask_parallel">Mirror</string>
+    <string name="pesdk_mask_circle">Round</string>
+    <string name="pesdk_mask_rectangle">Rectangle</string>
+    <string name="pesdk_mask_star">Star</string>
+    <string name="pesdk_mask_love">Love heart</string>
+    <string name="pesdk_mask_rect">quadrilateral</string>
+    <string name="pesdk_inverse">Reverse</string>
+    <string name="pesdk_overlay">Overlay</string>
+    <string name="pesdk_effect">Special effect</string>
+
+
+    <!-- Special effect -->
+
+
+    <string name="pesdk_import_compress" formatted="false">Compressing %s</string>
+    <string name="pesdk_import_compress_multiple" formatted="false">Compressing\n%s (%d/%d)</string>
+
+
+    <!--Mixed model picture in picture-->
+    <string name="pesdk_blend_screen">Color filter</string>
+    <string name="pesdk_blend_darken">Darken</string>
+    <string name="pesdk_blend_overlay">Overlay</string>
+    <string name="pesdk_blend_multiplay">Multiply</string>
+    <string name="pesdk_blend_lighten">Lighten</string>
+    <string name="pesdk_blend_hardlight">Strong light</string>
+    <string name="pesdk_blend_softlight">Soft light</string>
+    <string name="pesdk_blend_linearburn">Linear deepen</string>
+    <string name="pesdk_blend_colorburn">Color deepen</string>
+    <string name="pesdk_blend_colordodge">Color dodge</string>
+
+
+    <string name="pesdk_cutout_cancel">Cancel cutout</string>
+    <string name="pesdk_cutout1">Cutout1</string>
+    <string name="pesdk_cutout2">Cutout2</string>
+
+
+    <string name="pesdk_osd_rb_blur">Gaussian blur</string>
+    <string name="pesdk_osd_rb_pixl">Pixelated</string>
+    <string name="pesdk_osd_rb_osd">Remove watermark</string>
+
+    <string name="pesdk_dewatermark">Remove watermark</string>
+    <string name="pesdk_scale_limit">Scaled to threshold</string>
+    <string name="pesdk_layer_alpha">Opacity</string>
+
+
+    <string name="pesdk_doodle_rect">Rectangle</string>
+    <string name="pesdk_doodle_triangle">Arrow</string>
+    <string name="pesdk_doodle_free">Free brush</string>
+    <string name="pesdk_gallery">Gallery</string>
+    <string name="pesdk_range">Scene deepth</string>
+
+
+    <!--Cancel restore notice-->
+    <string name="pesdk_edit_undo">Cancel</string>
+    <string name="pesdk_edit_reduction">Restore</string>
+    <!--Operation action-->
+    <string name="pesdk_prompt_delete">Delete</string>
+    <string name="pesdk_prompt_add">Add</string>
+    <string name="pesdk_prompt_adjust">Adjust</string>
+
+
+    <string name="pesdk_toast_person_segment">Please select picture with human portrait</string>
+    <string name="pesdk_toast_sky_segment">Please select picture with sky</string>
+
+    <string name="pesdk_prompt_adjust_toning">Tone</string>
+
+
+    <string name="pesdk_isDrafting">Saving to draft box....</string>
+    <!--Auto saving notice-->
+
+    <string name="pesdk_adjust_guangxiao">Light effect</string>
+    <string name="pesdk_adjust_color">Color</string>
+    <string name="pesdk_adjust_adjust">Adjust</string>
+
+
+    <!--Template-->
+    <string name="pesdk_export_template">Export template</string>
+    <string name="pesdk_template_name">Template name</string>
+    <string name="edit_num">%1$d/%2$d</string>
+    <string name="pesdk_template_description">Template description</string>
+    <string name="pesdk_edit_name">Input template name</string>
+    <string name="pesdk_edit_description">Input template description</string>
+    <string name="pesdk_template_draft">Clip draft</string>
+    <string name="pesdk_draft_prompt">Draft can be edit while using template</string>
+    <string name="pesdk_upload_species">Upload category</string>
+    <string name="pesdk_new_type">New create</string>
+    <string name="pesdk_hint_type">Input to create category</string>
+    <string name="pesdk_group_info">Group information</string>
+    <string name="pesdk_media_info">Media information</string>
+
+
+    <string name="select_media_title_all">All</string>
+    <string name="pesdk_template">Same style cut</string>
+    <string name="template_none">Template is null, download or create!</string>
+    <string name="upload_species">Upload category</string>
+
+    <string name="pesdk_zip_file">File</string>
+    <string name="cover">Cover</string>
+
+    <string name="export_template">Export template</string>
+
+    <string name="pesdk_media_info_num">Image: %d   Text: %d </string>
+    <string name="cancel">Cancel</string>
+
+    <string name="pesdk_group">Group</string>
+    <string name="pesdk_group_none">No group</string>
+    <string name="pesdk_group_num">Group%d</string>
+    <string name="pesdk_group_cancel">Cancel group</string>
+    <string name="pesdk_snippet">Segment</string>
+
+    <string name="pesdk_track_bg">Background</string>
+    <string name="pesdk_track_main">Base map</string>
+    <string name="pesdk_edit_menu_pip">Layer</string>
+    <string name="pesdk_edit_menu_text">Text</string>
+
+    <string name="pesdk_limit_none">No limit</string>
+    <string name="pesdk_limit_video">Video only</string>
+    <string name="pesdk_limit_picture">Image only</string>
+
+    <string name="pesdk_error_locking">Can not lock all media</string>
+
+    <string name="pesdk_group_prompt_1">Can not only select layers in a group</string>
+    <string name="pesdk_group_prompt_2">Layers must be grouped</string>
+
+
+    <string name="pesdk_narrator">Narration</string>
+    <string name="pesdk_character">Character</string>
+
+
+    <string name="error_parsing">Error analysis</string>
+    <string name="begin_export_template">Creating template</string>
+    <string name="save_template_complete">Template save complete!</string>
+    <string name="uploading">Uploading...</string>
+    <string name="upload">Upload</string>
+
+
+    <!--Use draft-->
+    <string name="recovery_template">Template recovering...</string>
+    <string name="replacing_resources">Resource replacing...</string>
+    <string name="template_edit">Image edit</string>
+    <string name="template_word">Text edit</string>
+    <string name="template_draft">Clip draft</string>
+
+
+    <string name="screen">Shoot</string>
+    <string name="replace">Replace</string>
+    <string name="preview_crop">Crop</string>
+    <string name="edit_draft">Jump to edit draft?</string>
+    <string name="unknown_mistake">Unkown error</string>
+
+    <string name="edit_menu_watermark">Watermark</string>
+
+</resources>

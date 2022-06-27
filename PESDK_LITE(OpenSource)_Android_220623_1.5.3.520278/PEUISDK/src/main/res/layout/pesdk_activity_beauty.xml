@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pesdk_main_bg"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--播放器-->
+        <RelativeLayout
+            android:id="@+id/rl_video"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.vecore.VirtualImageView
+                android:id="@+id/beauty_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/pesdk_main_bg" />
+
+
+            <!--媒体拖拽-->
+            <com.pesdk.uisdk.beauty.widget.DragMediaView
+                android:id="@+id/drag_media"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.pesdk.uisdk.widget.edit.EditDragView
+                android:id="@+id/dragHair"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/tmpView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pesdk_main_bg" />
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_fragment_height"
+            android:background="@color/pesdk_child_fragment_bg"
+            android:orientation="vertical">
+            <!--菜单-->
+            <com.pesdk.uisdk.widget.ReboundHScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scrollbars="none"
+                app:layout_constraintBottom_toTopOf="@+id/tmp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/btn_auto"
+                        style="@style/pesdk_beauty_menu_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:drawableTop="@drawable/pesdk_beauty_auto"
+                        android:onClick="onBeauty"
+                        android:text="@string/pesdk_beauty_auto" />
+
+                    <TextView
+                        android:id="@+id/btn_five_senses"
+                        style="@style/pesdk_beauty_menu_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:drawableTop="@drawable/pesdk_beauty_five_senses"
+                        android:onClick="onBeauty"
+                        android:text="@string/pesdk_fu_wuguan" />
+
+                    <TextView
+                        android:id="@+id/blue"
+                        style="@style/pesdk_beauty_menu_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:drawableTop="@drawable/pesdk_beauty_beauty"
+                        android:onClick="onBeauty"
+                        android:text="@string/pesdk_fu_blue" />
+
+                    <TextView
+                        android:id="@+id/btn_color"
+                        style="@style/pesdk_beauty_menu_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:drawableTop="@drawable/pesdk_beauty_whitening"
+                        android:onClick="onBeauty"
+                        android:text="@string/pesdk_fu_whitening" />
+
+
+                    <TextView
+                        android:id="@+id/btn_face"
+                        style="@style/pesdk_beauty_menu_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:drawableTop="@drawable/pesdk_beauty_shoulian"
+                        android:onClick="onBeauty"
+                        android:text="@string/pesdk_fu_facelift" />
+
+                    <TextView
+                        android:id="@+id/btn_eyes"
+                        style="@style/pesdk_beauty_menu_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:drawableTop="@drawable/pesdk_beauty_big_eye"
+                        android:onClick="onBeauty"
+                        android:text="@string/pesdk_fu_bigeye" />
+
+                    <TextView
+                        android:id="@+id/btn_ruddy"
+                        style="@style/pesdk_beauty_menu_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:drawableTop="@drawable/pesdk_beauty_ruddy"
+                        android:onClick="onBeauty"
+                        android:text="@string/pesdk_fu_ruddy" />
+
+                    <TextView
+                        android:id="@+id/btn_hair"
+                        style="@style/pesdk_beauty_menu_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:drawableTop="@drawable/pesdk_beauty_hair"
+                        android:onClick="onBeauty"
+                        android:text="@string/pesdk_fu_hair" />
+
+                    <TextView
+                        android:id="@+id/btn_freckle"
+                        style="@style/pesdk_beauty_menu_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:drawableTop="@drawable/pesdk_beauty_freckle"
+                        android:onClick="onBeauty"
+                        android:text="@string/pesdk_fu_freckle"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </com.pesdk.uisdk.widget.ReboundHScrollView>
+
+
+            <RelativeLayout
+                android:id="@+id/tmp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageView
+                    android:id="@+id/btnLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/pesdk_btn_bottom_cancel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/pesdk_beauty"
+                    android:textColor="@color/pesdk_main_text_color_n"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/btnRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/pesdk_btn_bottom_sure" />
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

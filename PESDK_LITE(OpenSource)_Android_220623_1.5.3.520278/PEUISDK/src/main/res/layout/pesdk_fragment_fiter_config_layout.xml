@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pesdk_child_fragment_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/pesdk_toning_reset"
+                android:textColor="@color/pesdk_main_text_color_n"
+                android:textSize="@dimen/text_size_16" />
+
+
+        </LinearLayout>
+
+        <com.vecore.base.lib.ui.ExtButton
+            android:id="@+id/btnDiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@drawable/pesdk_btn_toning_reset_bg"
+            android:gravity="center"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/pesdk_toning_diff"
+            android:textColor="@color/pesdk_main_text_color_n"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/valueLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/pesdk_main_text_color_n"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="invisible" />
+
+            <com.pesdk.uisdk.widget.ExtFilterSeekBar
+                android:id="@+id/sbar_range"
+                style="@style/pesdk_filter_config_sbar"
+                android:layout_marginLeft="@dimen/dimen_10" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <com.pesdk.uisdk.widget.ReboundHScrollView
+                android:id="@+id/vgGuangxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rgGuangxiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/btn_brightness"
+                            style="@style/pesdk_adjust_item_style"
+                            android:drawableTop="@drawable/pesdk_toning_brightness"
+                            android:drawablePadding="3dp"
+                            android:text="@string/pesdk_filter_brightness" />
+
+                        <RadioButton
+                            android:id="@+id/btn_contrast"
+                            style="@style/pesdk_adjust_item_style"
+                            android:drawableTop="@drawable/pesdk_toning_saturation"
+                            android:drawablePadding="3dp"
+                            android:text="@string/pesdk_filter_contrast" />
+
+                        <RadioButton
+                            android:id="@+id/btn_hightlight"
+                            style="@style/pesdk_adjust_item_style"
+                            android:drawableTop="@drawable/pesdk_toning_filter_temperature"
+                            android:drawablePadding="3dp"
+                            android:text="@string/pesdk_filter_highlight" />
+
+                        <RadioButton
+                            android:id="@+id/btn_guanggan"
+                            style="@style/pesdk_adjust_item_style"
+                            android:drawableTop="@drawable/pesdk_toning_ggan"
+                            android:drawablePadding="3dp"
+                            android:text="@string/pesdk_filter_guanggan" />
+
+
+                        <RadioButton
+                            android:id="@+id/btn_shadow"
+                            style="@style/pesdk_adjust_item_style"
+                            android:drawableTop="@drawable/pesdk_toning_shadow"
+                            android:drawablePadding="3dp"
+                            android:text="@string/pesdk_filter_shadow" />
+
+                        <RadioButton
+                            android:id="@+id/btn_hese"
+                            style="@style/pesdk_adjust_item_style"
+                            android:drawableTop="@drawable/pesdk_toning_hs"
+                            android:drawablePadding="3dp"
+                            android:text="@string/pesdk_filter_hese" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </com.pesdk.uisdk.widget.ReboundHScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/vgColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/rgColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/btn_saturation"
+                        style="@style/pesdk_adjust_item_style"
+                        android:drawableTop="@drawable/pesdk_toning_bhd"
+                        android:drawablePadding="3dp"
+                        android:text="@string/pesdk_filter_saturation" />
+
+
+                    <RadioButton
+                        android:id="@+id/btn_temperature"
+                        style="@style/pesdk_adjust_item_style"
+                        android:drawableTop="@drawable/pesdk_toning_temperature"
+                        android:drawablePadding="3dp"
+                        android:text="@string/pesdk_filter_temperature" />
+
+                    <RadioButton
+                        android:id="@+id/btn_tone"
+                        style="@style/pesdk_adjust_item_style"
+                        android:drawableTop="@drawable/pesdk_toning_contrast"
+                        android:drawablePadding="3dp"
+                        android:text="@string/pesdk_filter_tone" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vgAdjust"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/rgAdjust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/btn_keli"
+                        style="@style/pesdk_adjust_item_style"
+                        android:drawableTop="@drawable/pesdk_toning_keli"
+                        android:drawablePadding="3dp"
+                        android:text="@string/pesdk_filter_keli" />
+
+                    <RadioButton
+                        android:id="@+id/btn_sharpen"
+                        style="@style/pesdk_adjust_item_style"
+                        android:drawableTop="@drawable/pesdk_toning_sharpen"
+                        android:drawablePadding="3dp"
+                        android:text="@string/pesdk_filter_sharpness" />
+
+                    <RadioButton
+                        android:id="@+id/btn_vignette"
+                        style="@style/pesdk_adjust_item_style"
+                        android:drawableTop="@drawable/pesdk_toning_vignette"
+                        android:drawablePadding="3dp"
+                        android:text="@string/pesdk_filter_vignette" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45">
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pesdk_btn_bottom_cancel" />
+
+
+        <RadioGroup
+            android:id="@+id/rgGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/adjust_guangxiao"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/pesdk_adjust_guangxiao"
+                android:textColor="@drawable/pesdk_sub_menu_x_textcolor"
+                android:textSize="@dimen/text_size_16" />
+
+            <RadioButton
+                android:id="@+id/adjust_color"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/pesdk_adjust_color"
+                android:textColor="@drawable/pesdk_sub_menu_x_textcolor"
+                android:textSize="@dimen/text_size_16" />
+
+            <RadioButton
+                android:id="@+id/adjust_adjust"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/pesdk_adjust_adjust"
+                android:textColor="@drawable/pesdk_sub_menu_x_textcolor"
+                android:textSize="@dimen/text_size_16" />
+
+        </RadioGroup>
+
+
+        <ImageView
+            android:id="@+id/ivSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pesdk_btn_bottom_sure" />
+    </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+
+        <Button
+            android:id="@+id/btnChildRevoke"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_2"
+            android:background="@drawable/pesdk_erase_pen_revoke"
+            android:enabled="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnChildUndo"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_2"
+            android:background="@drawable/pesdk_erase_pen_undo"
+            android:enabled="false"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <Button
+            android:id="@+id/btnEarse"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_3"
+            android:background="@drawable/pesdk_ic_watermark_delete" />
+
+        <Button
+            android:id="@+id/btnChildReset"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_3"
+            android:background="@drawable/pesdk_erase_pen_reset"
+            android:enabled="false"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnChildDiff"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_3"
+            android:background="@drawable/pesdk_erase_pen_diff"
+            android:enabled="false"
+            android:visibility="gone" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

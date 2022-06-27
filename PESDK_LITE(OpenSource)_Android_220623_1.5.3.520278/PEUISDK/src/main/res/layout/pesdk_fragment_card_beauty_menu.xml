@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--菜单-->
+    <com.pesdk.uisdk.widget.ReboundHScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/btn_auto"
+                style="@style/pesdk_beauty_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:drawableTop="@drawable/pesdk_beauty_auto"
+                android:onClick="onBeauty"
+                android:text="@string/pesdk_beauty_auto" />
+
+            <TextView
+                android:id="@+id/btn_five_senses"
+                style="@style/pesdk_beauty_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:drawableTop="@drawable/pesdk_beauty_five_senses"
+                android:onClick="onBeauty"
+                android:text="@string/pesdk_fu_wuguan" />
+
+            <TextView
+                android:id="@+id/blue"
+                style="@style/pesdk_beauty_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:drawableTop="@drawable/pesdk_beauty_beauty"
+                android:onClick="onBeauty"
+                android:text="@string/pesdk_fu_blue" />
+
+            <TextView
+                android:id="@+id/btn_color"
+                style="@style/pesdk_beauty_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:drawableTop="@drawable/pesdk_beauty_whitening"
+                android:onClick="onBeauty"
+                android:text="@string/pesdk_fu_whitening" />
+
+
+            <TextView
+                android:id="@+id/btn_face"
+                style="@style/pesdk_beauty_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:drawableTop="@drawable/pesdk_beauty_shoulian"
+                android:onClick="onBeauty"
+                android:text="@string/pesdk_fu_facelift" />
+
+            <TextView
+                android:id="@+id/btn_eyes"
+                style="@style/pesdk_beauty_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:drawableTop="@drawable/pesdk_beauty_big_eye"
+                android:onClick="onBeauty"
+                android:text="@string/pesdk_fu_bigeye" />
+
+            <TextView
+                android:id="@+id/btn_ruddy"
+                style="@style/pesdk_beauty_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:drawableTop="@drawable/pesdk_beauty_ruddy"
+                android:onClick="onBeauty"
+                android:text="@string/pesdk_fu_ruddy" />
+
+
+            <TextView
+                android:id="@+id/btn_freckle"
+                style="@style/pesdk_beauty_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:drawableTop="@drawable/pesdk_beauty_freckle"
+                android:onClick="onBeauty"
+                android:text="@string/pesdk_fu_freckle"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </com.pesdk.uisdk.widget.ReboundHScrollView>
+</RelativeLayout>

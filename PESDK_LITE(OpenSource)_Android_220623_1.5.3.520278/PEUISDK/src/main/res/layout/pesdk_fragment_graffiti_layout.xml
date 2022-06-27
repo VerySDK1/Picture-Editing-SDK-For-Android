@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/graffitiRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pesdk_child_fragment_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_color_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <include
+            layout="@layout/pesdk_paint_stroke_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/paint_eraser" />
+
+        <ImageView
+            android:id="@+id/paint_eraser"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/pesdk_eraser_normal"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <com.pesdk.uisdk.widget.ColorBar
+            android:id="@+id/colorBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:hideNone="true" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgDoodleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_doodle_rect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_6"
+            android:background="@null"
+            android:button="@drawable/pesdk_doodle_rect"
+            android:text="@string/pesdk_doodle_rect"
+            android:textColor="@drawable/pesdk_edit_menu_color" />
+
+        <RadioButton
+            android:id="@+id/rb_doodle_triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_6"
+            android:background="@null"
+            android:button="@drawable/pesdk_doodle_triangle"
+            android:text="@string/pesdk_doodle_triangle"
+            android:textColor="@drawable/pesdk_edit_menu_color" />
+
+        <RadioButton
+            android:id="@+id/rb_doodle_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_6"
+            android:background="@null"
+            android:button="@drawable/pesdk_doodle_free"
+            android:checked="true"
+            android:text="@string/pesdk_doodle_free"
+            android:textColor="@drawable/pesdk_edit_menu_color" />
+    </RadioGroup>
+
+    <include layout="@layout/pesdk_fragment_titlebar_layout" />
+</LinearLayout>

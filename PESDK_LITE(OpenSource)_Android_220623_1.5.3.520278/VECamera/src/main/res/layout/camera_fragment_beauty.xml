@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/camera_menu_height"
+    android:orientation="vertical"
+    android:background="@color/transparent_black50"
+    android:clipChildren="false"
+    tools:context=".ui.fragment.MenuFragment">
+
+    <!--顶部菜单-->
+    <include layout="@layout/camera_layout_top_menu"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+    <!--菜单-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/btnBeauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:drawableTop="@drawable/camera_ic_beauty_beauty"
+                android:drawablePadding="-5dp"
+                android:gravity="center"
+                android:text="@string/camera_blue"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/btnWhitening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:drawableTop="@drawable/camera_ic_beauty_whitening"
+                android:drawablePadding="-5dp"
+                android:gravity="center"
+                android:text="@string/camera_whitening"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/btnRuddy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:drawableTop="@drawable/camera_ic_beauty_ruddy"
+                android:drawablePadding="-5dp"
+                android:gravity="center"
+                android:text="@string/camera_ruddy"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/btnBigEye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:drawableTop="@drawable/camera_ic_beauty_big_eye"
+                android:drawablePadding="-5dp"
+                android:gravity="center"
+                android:text="@string/camera_bigeye"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/btnFaceLift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:drawableTop="@drawable/camera_ic_beauty_face"
+                android:drawablePadding="-5dp"
+                android:gravity="center"
+                android:text="@string/camera_facelift"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/btnFiveSenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="30dp"
+                android:button="@null"
+                android:drawableTop="@drawable/camera_ic_beauty_five_senses"
+                android:drawablePadding="-5dp"
+                android:gravity="center"
+                android:text="@string/camera_five_senses"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="12dp" />
+
+        </RadioGroup>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false">
+
+        <ImageView
+            android:id="@+id/ivReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/common_desc"
+            android:src="@drawable/camera_reset"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/camera_ic_recorder_close"
+            android:contentDescription="@string/common_desc"
+            android:onClick="clickView" />
+
+        <com.pesdk.widget.ExtSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@id/ivSure"
+            android:layout_toEndOf="@id/ivReset"
+            android:clipChildren="false"
+            android:max="100"
+            android:maxWidth="1.5dp"
+            android:maxHeight="1.5dp"
+            android:minWidth="1.5dp"
+            android:minHeight="1.5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progress="100"
+            android:thumbOffset="15dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/transparent_white20" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pesdk_child_fragment_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/childfragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rgMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbBG"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:button="@drawable/pesdk_card_bg"
+            android:gravity="center"
+            android:text="@string/pesdk_card_bg"
+            android:textColor="@drawable/pesdk_sub_menu_x_textcolor"
+            android:textSize="@dimen/text_size_14" />
+
+        <RadioButton
+            android:id="@+id/rbBeauty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:button="@drawable/pesdk_card_beauty"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/pesdk_card_beauty"
+            android:textColor="@drawable/pesdk_sub_menu_x_textcolor"
+            android:textSize="@dimen/text_size_14" />
+
+        <RadioButton
+            android:id="@+id/rbClothes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:button="@drawable/pesdk_card_clothes"
+            android:gravity="center"
+            android:text="@string/pesdk_card_clothes"
+            android:textColor="@drawable/pesdk_sub_menu_x_textcolor"
+            android:textSize="@dimen/text_size_14" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

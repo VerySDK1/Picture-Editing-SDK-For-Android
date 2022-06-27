@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <!--草稿-->
+    <style name="alert_listview_dialog_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/pesdk_alert_button_text_color</item>
+        <item name="android:textSize" tools:ignore="SpUsage">@dimen/text_size_14</item>
+    </style>
+
+    <!--弹窗动画-->
+    <style name="dialog_style" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <!--弹窗动画-->
+    <style name="dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/pesdk_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/pesdk_scale_out</item>
+    </style>
+
+    <!--菜单 标题-->
+    <style name="menu_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!--菜单 item-->
+    <style name="menu_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!--菜单 item 标题-->
+    <style name="menu_item_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <!--菜单 右侧箭头-->
+    <style name="menu_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">@string/common_desc</item>
+        <item name="android:src">@drawable/flow_ic_arrow_right</item>
+    </style>
+
+    <!--线-->
+    <style name="menu_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">@color/flow_line</item>
+    </style>
+
+    <!--线 子菜单-->
+    <style name="menu_line_sub" parent="menu_line">
+        <item name="android:layout_marginStart">20dp</item>
+    </style>
+
+
+
+
+    <!--弹窗-->
+    <style name="flow_dialog_style" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <!--弹窗动画-->
+    <style name="flow_dialog_anim_bottom">
+        <item name="android:windowEnterAnimation">@anim/flow_translate_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/flow_translate_out_bottom</item>
+    </style>
+</resources>

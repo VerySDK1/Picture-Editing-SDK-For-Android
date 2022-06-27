@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/album_main_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--关闭-->
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:contentDescription="@string/common_desc"
+            android:src="@drawable/pesdk_image_edit_back" />
+
+        <ImageView
+            android:id="@+id/btnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/common_desc"
+            android:src="@drawable/album_ic_camera"
+            android:tint="@color/text_color"
+            tools:ignore="UseAppTint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btnCamera"
+            android:layout_toEndOf="@id/btnClose"
+            android:baselineAligned="false">
+
+            <!--相机胶卷-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp">
+
+                <TextView
+                    android:id="@+id/btnDirectory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:singleLine="true"
+                    android:text="@string/album_camera_roll"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ivArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-2dp"
+                    android:contentDescription="@string/common_desc"
+                    android:src="@drawable/album_ic_arrow_down"
+                    android:tint="@color/text_color"
+                    tools:ignore="UseAppTint" />
+
+            </LinearLayout>
+
+            <!--素材库-->
+            <LinearLayout
+                android:id="@+id/llMaterial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp">
+
+                <TextView
+                    android:id="@+id/btnMaterialLibrary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:singleLine="true"
+                    android:text="@string/album_material_library"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--选中-->
+            <LinearLayout
+                android:id="@+id/rlAlbumBottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/album_bar"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvImportNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="60dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/album_shape_btn_orange"
+                        android:enabled="false"
+                        android:text="@string/album_next_step"
+                        tools:ignore="RelativeOverlap" />
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCheckedMedia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    <TextView
+                        android:id="@+id/tvMediaHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/album_select_media_hint"
+                        android:textColor="@color/transparent_black50"
+                        android:textSize="16dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!--相册-->
+            <LinearLayout
+                android:id="@+id/fragmentAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/rlAlbumBottomBar"
+                android:orientation="vertical" />
+
+            <!--素材库-->
+            <LinearLayout
+                android:id="@+id/fragmentMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/rlAlbumBottomBar"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <!--目录选择-->
+        <RelativeLayout
+            android:id="@+id/rlDirectory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_black80"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="130dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvDirectory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/album_shape_directory" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

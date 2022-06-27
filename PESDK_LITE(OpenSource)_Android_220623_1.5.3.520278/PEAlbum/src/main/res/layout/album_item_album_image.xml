@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pesdk.album.uisdk.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp">
+
+    <!--封面-->
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/common_desc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--编辑-->
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="6dp"
+            android:background="@null"
+            android:src="@drawable/album_ic_select_image"
+            android:contentDescription="@string/common_desc"
+            android:padding="2dp" />
+
+    </RelativeLayout>
+
+    <!--数量-->
+    <RelativeLayout
+        android:id="@+id/rlNum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black80"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:gravity="start|center_vertical"
+            android:paddingStart="2dp"
+            android:paddingEnd="0dp"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--mask-->
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black80"
+        android:visibility="gone" />
+
+</com.pesdk.album.uisdk.widget.SquareFrameLayout>

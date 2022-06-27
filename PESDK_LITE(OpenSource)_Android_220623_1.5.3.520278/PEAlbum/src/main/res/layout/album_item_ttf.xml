@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pesdk.album.uisdk.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/album_item_bg">
+
+        <!--封面-->
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/common_desc" />
+
+        <ImageView
+            android:id="@+id/ivDown"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="8dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/album_ic_down"
+            android:contentDescription="@string/common_desc" />
+
+        <!--失败-->
+        <ImageView
+            android:id="@+id/ivFailAgain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/common_desc"
+            android:visibility="gone" />
+
+        <include layout="@layout/common_loading_download" />
+
+    </RelativeLayout>
+
+</com.pesdk.album.uisdk.widget.SquareFrameLayout>

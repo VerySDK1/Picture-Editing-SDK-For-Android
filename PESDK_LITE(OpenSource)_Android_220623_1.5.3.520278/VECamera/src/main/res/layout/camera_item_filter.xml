@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_60"
+    android:layout_height="@dimen/dp_60"
+    android:layout_margin="@dimen/dp_5"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/dp_7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--封面-->
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/common_desc" />
+
+        <!--下载-->
+        <ImageView
+            android:id="@+id/ivDown"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/common_desc"
+            android:src="@drawable/camera_ic_download" />
+
+        <!--失败-->
+        <ImageView
+            android:id="@+id/ivFailAgain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/common_desc"
+            android:visibility="gone" />
+
+        <!--加载-->
+        <include layout="@layout/common_loading_download" />
+
+        <!--边框-->
+        <com.vesdk.camera.widget.OutsideFrameView
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

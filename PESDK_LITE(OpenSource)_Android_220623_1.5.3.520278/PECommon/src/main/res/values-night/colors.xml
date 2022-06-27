@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pesdk_black">#000000</color>
+    <color name="pesdk_white">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#E5004F</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="pesdk_white_divider">#33ffffff</color>
+
+
+    <color name="pesdk_main_bg">#f7f7f7</color>
+
+
+    <!-- 半透明黑色 -->
+    <color name="transparent_black1">#01000000</color>
+    <color name="transparent_black5">#05000000</color>
+    <color name="transparent_black10">#10000000</color>
+    <color name="transparent_black20">#33000000</color>
+    <color name="transparent_black50">#80000000</color>
+    <color name="transparent_black80">#CC000000</color>
+    <color name="transparent_black95">#F2000000</color>
+
+    <color name="pesdk_main_color">#9700ff</color>
+
+
+    <!-- 半透明白色 -->
+    <color name="transparent_white20">#33FFFFFF</color>
+    <color name="transparent_white50">#80FFFFFF</color>
+    <color name="transparent_white80">#CCFFFFFF</color>
+    <color name="transparent_white95">#F2FFFFFF</color>
+
+    <!-- 文字 -->
+    <color name="text_color">@color/white</color>
+    <color name="text_color_level_2">#CCCCCC</color>
+    <!-- 选择弹窗 -->
+    <color name="common_dialog_back">#151515</color>
+    <color name="common_dialog_bg">#252525</color>
+    <color name="common_dialog_line">#CC616161</color>
+
+</resources>

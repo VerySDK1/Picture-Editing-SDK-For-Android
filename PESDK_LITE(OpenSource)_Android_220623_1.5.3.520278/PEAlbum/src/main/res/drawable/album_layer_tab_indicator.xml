@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="18dp"
+        android:gravity="center|bottom">
+        <shape>
+            <corners android:radius="1.5dp" />
+            <size android:height="3dp" />
+            <solid android:color="@color/album_main" />
+        </shape>
+    </item>
+</layer-list>

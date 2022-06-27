@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rd="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_icon"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.pesdk.uisdk.widget.ExtListItemStyle
+            android:id="@+id/item_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@null"
+            rd:extBorderLineWidth="2dp"
+            rd:extBorderRoundRadius="3dp" />
+
+        <ImageView
+            android:id="@+id/sdv_src"
+            style="@style/pesdk_effectAniButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:background="@null" />
+
+        <ImageView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/pesdk_prompt_point"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical">
+
+        <!--无-->
+        <LinearLayout
+            android:id="@+id/noneLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawableLeft="@drawable/pesdk_none"
+                android:gravity="center"
+                android:text="@string/pesdk_none"
+                android:textColor="@color/pesdk_main_text_color_n"
+                android:textSize="@dimen/text_size_13" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@color/pesdk_line_color" />
+        </LinearLayout>
+
+
+        <!--名字-->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:text=""
+            android:textColor="@color/pesdk_black"
+            android:textSize="@dimen/text_size_13" />
+
+    </LinearLayout>
+
+</FrameLayout>

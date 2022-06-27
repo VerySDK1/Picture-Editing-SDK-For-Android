@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vesdk.common.widget.ReboundHScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_brightness"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_brightness"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_brightness" />
+
+                <RadioButton
+                    android:id="@+id/btn_contrast"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_saturation"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_contrast" />
+
+                <RadioButton
+                    android:id="@+id/btn_hightlight"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_filter_temperature"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_highlight" />
+
+                <RadioButton
+                    android:id="@+id/btn_guanggan"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_ggan"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_guanggan" />
+
+                <RadioButton
+                    android:id="@+id/btn_shadow"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_shadow"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_shadow" />
+
+                <RadioButton
+                    android:id="@+id/btn_hese"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_hs"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_hese" />
+
+                <RadioButton
+                    android:id="@+id/btn_saturation"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_bhd"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_saturation" />
+
+
+                <RadioButton
+                    android:id="@+id/btn_temperature"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_temperature"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_temperature" />
+
+                <RadioButton
+                    android:id="@+id/btn_tone"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_contrast"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_tone" />
+
+                <RadioButton
+                    android:id="@+id/btn_keli"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_keli"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_keli" />
+
+                <RadioButton
+                    android:id="@+id/btn_sharpen"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_sharpen"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_sharpness" />
+
+                <RadioButton
+                    android:id="@+id/btn_vignette"
+                    style="@style/camera_adjust_item_style"
+                    android:drawableTop="@drawable/camera_toning_vignette"
+                    android:drawablePadding="3dp"
+                    android:text="@string/pesdk_filter_vignette" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+    </com.vesdk.common.widget.ReboundHScrollView>
+
+    <LinearLayout
+        android:id="@+id/valueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="invisible" />
+
+        <com.vesdk.common.widget.ExtFilterSeekBar
+            android:id="@+id/mRange"
+            style="@style/camera_filter_config_sbar"
+            android:layout_marginLeft="@dimen/dp_10" />
+
+    </LinearLayout>
+</LinearLayout>

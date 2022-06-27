@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/childRevokeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_45"
+    android:layout_gravity="bottom|right"
+    android:gravity="right|bottom"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+
+    <Button
+        android:id="@+id/btnChildRevoke"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_2"
+        android:background="@drawable/pesdk_erase_pen_revoke"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/btnChildUndo"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_2"
+        android:background="@drawable/pesdk_erase_pen_undo"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/btnChildReset"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_3"
+        android:background="@drawable/pesdk_erase_pen_reset"
+        android:enabled="false"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnChildDiff"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_3"
+        android:background="@drawable/pesdk_erase_pen_diff"
+        android:enabled="false"
+        android:visibility="gone" />
+
+</LinearLayout>

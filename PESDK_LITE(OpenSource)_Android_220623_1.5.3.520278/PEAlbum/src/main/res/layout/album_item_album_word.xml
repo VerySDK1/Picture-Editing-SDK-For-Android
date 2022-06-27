@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pesdk.album.uisdk.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3c3b43"
+    android:layout_margin="2dp">
+
+    <!--文字板-->
+    <ImageView
+        android:id="@+id/ivWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/common_desc"
+        android:src="@drawable/album_ic_word_broad" />
+
+    <!--mask-->
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black80"
+        android:visibility="gone" />
+
+</com.pesdk.album.uisdk.widget.SquareFrameLayout>

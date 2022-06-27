@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="music_music_library">音乐库</string>
+
+    <!--菜单-->
+    <string name="music_recommend">推荐音乐</string>
+    <string name="music_collage">我的收藏</string>
+    <string name="music_browsed">历史</string>
+    <string name="music_local">本地</string>
+
+    <!--本地-->
+    <string name="music_local_music">音乐</string>
+    <string name="music_local_video">视频</string>
+    <string name="music_local_import">导入</string>
+
+    <!--空-->
+    <string name="music_none_browsed">无历史</string>
+    <string name="music_none_music">无音乐</string>
+    <string name="music_none_video">无视频</string>
+
+    <string name="music_use">使用</string>
+
+    <!--加载-->
+    <string name="music_loading">加载中&#8230;</string>
+    <string name="music_loading_end">没有更多了&#8230;</string>
+    <string name="music_loading_retry">重试</string>
+
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/album_main_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/common_desc"
+            android:src="@drawable/album_ic_cancel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/album_text_board"
+            android:textColor="@color/text_color"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/btnSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/common_desc"
+            android:src="@drawable/album_ic_sure" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.vecore.base.lib.ui.PreviewFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <com.pesdk.album.uisdk.widget.ExtEditPicView
+                    android:id="@+id/etEditPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="@string/album_input_hint"
+                    android:lines="6"
+                    android:maxLines="6"
+                    android:scrollbarStyle="@null"
+                    android:singleLine="false"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_color_level_2"
+                    android:textSize="25dp" />
+
+            </com.vecore.base.lib.ui.PreviewFrameLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/album_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnKeyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/transparent"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="5dp"
+                    android:text="@string/album_keyboard"
+                    android:textColor="@color/text_color" />
+
+                <Button
+                    android:id="@+id/btnColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/transparent"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="5dp"
+                    android:text="@string/album_color"
+                    android:textColor="@color/text_color" />
+
+                <Button
+                    android:id="@+id/btnTtf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/transparent"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="5dp"
+                    android:text="@string/album_ttf"
+                    android:textColor="@color/text_color" />
+
+                <Button
+                    android:id="@+id/btnBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/transparent"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="5dp"
+                    android:text="@string/album_background"
+                    android:textColor="@color/text_color" />
+
+                <Button
+                    android:id="@+id/btnAlign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/transparent"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="5dp"
+                    android:text="@string/album_align"
+                    android:textColor="@color/text_color"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/album_line" />
+
+            <FrameLayout
+                android:id="@+id/flMenu"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <com.pesdk.album.uisdk.widget.ExtColorPickerView
+                    android:id="@+id/txColorPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:isDrawCircle="true"
+                    app:isTextEdit="true" />
+
+                <com.pesdk.album.uisdk.widget.ExtColorPickerView
+                    android:id="@+id/bgColorPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:isDrawCircle="false"
+                    app:isTextEdit="true" />
+
+                <FrameLayout
+                    android:id="@+id/flFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

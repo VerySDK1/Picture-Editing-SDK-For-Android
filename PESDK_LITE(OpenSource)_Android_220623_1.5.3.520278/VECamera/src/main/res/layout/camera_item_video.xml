@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp">
+
+    <com.vesdk.camera.widget.SpecialItemFrameLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@color/camera_main">
+
+                <!--封面-->
+                <ImageView
+                    android:id="@+id/ivCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/common_desc" />
+
+                <TextView
+                    android:id="@+id/tvMediaNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/camera_shape_text_gray"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="1"
+                    android:textColor="@color/text_color"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/common_desc"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="-2dp"
+                android:background="@drawable/camera_ic_delete"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+    </com.vesdk.camera.widget.SpecialItemFrameLayout>
+
+</LinearLayout>
+
+

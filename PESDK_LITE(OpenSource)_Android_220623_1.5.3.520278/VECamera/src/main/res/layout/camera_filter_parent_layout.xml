@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/camera_filter_height"
+    android:background="@color/transparent_black50"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rgFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:minWidth="@dimen/dp_45"
+            android:text="@string/camera_filter"
+            android:textColor="@drawable/camera_selector_text"
+            android:textSize="@dimen/text_size_14" />
+
+        <RadioButton
+            android:id="@+id/rbTone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:background="@null"
+            android:button="@null"
+            android:minWidth="@dimen/dp_45"
+            android:text="@string/camera_tone"
+            android:textColor="@drawable/camera_selector_text"
+            android:textSize="@dimen/text_size_14" />
+
+
+    </RadioGroup>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/transparent_white20" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:clipChildren="false">
+
+        <TextView
+            android:id="@+id/ivReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/camera_ic_tone_reset"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:src="@drawable/camera_reset"
+            android:text="@string/camera_reset"
+            android:textColor="@drawable/camera_tone_reset"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/camera_ic_recorder_close"
+            android:contentDescription="@string/common_desc"
+            android:onClick="clickView" />
+    </RelativeLayout>
+</LinearLayout>

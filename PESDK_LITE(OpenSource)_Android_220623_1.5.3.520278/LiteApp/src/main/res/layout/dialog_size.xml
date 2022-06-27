@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_name"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_export_size"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn480"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_button_red"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="480P"
+                android:textColor="@color/text_color"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn720"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_button_red"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="720"
+                android:textColor="@color/text_color"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn1080"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_button_red"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="1080"
+                android:textColor="@color/text_color"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn2k"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_button_red"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="2K/4K"
+                android:textColor="@color/text_color"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/common_desc"
+        android:padding="4dp"
+        android:src="@drawable/ic_menu_close" />
+
+</RelativeLayout>

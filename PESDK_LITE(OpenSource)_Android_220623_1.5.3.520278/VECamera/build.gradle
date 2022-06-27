@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion compileSdkVer
+    buildToolsVersion buildToolsVer
+
+    defaultConfig {
+        minSdkVersion minSdkVer
+        targetSdkVersion targetSdkVer
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled releaseMinify
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    //前缀
+    resourcePrefix 'camera_'
+    //序列化
+    androidExtensions {
+        experimental = true
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    //公共
+    implementation project(':PECommon')
+    //Core
+    implementation project(':VECore')
+    //引擎
+    implementation project(':VEEngine')
+}

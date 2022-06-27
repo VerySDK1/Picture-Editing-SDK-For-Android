@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PESDK</string>
+
+    <string name="common_pe_loading_error">加载失败...</string>
+    <string name="common_pe_error_parsing">解析错误</string>
+    <!--图片描述-->
+    <string name="common_desc">图片</string>
+    <!--加载中-->
+    <string name="common_loading">加载中&#8230;</string>
+    <string name="common_loading_error">加载失败&#8230;</string>
+
+
+
+
+    <string name="common_sure">确定</string>
+    <string name="common_cancel">取消</string>
+
+    <!--权限-->
+    <string name="common_permission_title">需要申请的权限</string>
+    <string name="common_permission_cancel">取消权限申请</string>
+
+    <!--网络-->
+    <string name="common_check_network">没有可用的网络</string>
+    <string name="common_many_failures_url_none">失败次数过多或地址为空</string>
+    <string name="common_many_downloads_currently">当前下载内容过多</string>
+    <string name="common_downloading">下载中&#8230;</string>
+    <string name="common_download_fail">下载失败</string>
+
+    <!--弹窗-->
+    <string name="common_dialog_title">温馨提示</string>
+    <string name="common_dialog_message_permission">请打开权限</string>
+    <string name="common_authorization">授权</string>
+    <string name="common_exit">退出</string>
+
+
+
+    <string name="pesdk_toning_reset">还原</string>
+    <string name="pesdk_toning_diff">对比</string>
+    <string name="pesdk_toning_reset_msg">确认要重置吗?</string>
+    <string name="pesdk_toning_diff_msg">原始效果</string>
+
+    <string name="pesdk_filter_brightness">亮度</string>
+    <string name="pesdk_filter_contrast">对比度</string>
+    <string name="pesdk_filter_highlight">高光</string>
+    <string name="pesdk_filter_guanggan">光感</string>
+    <string name="pesdk_filter_shadow">阴影</string>
+    <string name="pesdk_filter_hese">褐色</string>
+    <string name="pesdk_filter_unknow">未知</string>
+
+
+    <string name="pesdk_filter_saturation">饱和度</string>
+    <string name="pesdk_filter_temperature">色温</string>
+    <string name="pesdk_filter_tone">色调</string>
+
+
+    <string name="pesdk_filter_keli">颗粒</string>
+    <string name="pesdk_filter_sharpness">锐度</string>
+    <string name="pesdk_filter_vignette">暗角</string>
+</resources>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="album_camera_roll">相机胶卷</string>
+    <string name="album_all_video">全部视频</string>
+    <string name="album_all_photo">全部图片</string>
+    <string name="album_material_library">素材库</string>
+    <string name="album_video">视频</string>
+    <string name="album_photo">照片</string>
+    <string name="album_media_all">全部</string>
+    <string name="album_text">文字</string>
+    <string name="album_all">总共</string>
+
+    <string name="album_next_step">下一步</string>
+    <string name="album_select_media_hint">请选择媒体!</string>
+    <string name="album_media_not_found">没有找到媒体</string>
+
+    <!--预览-->
+    <string name="album_preview_error">暂时无法预览，请重试！</string>
+
+    <!--文字图片-->
+    <string name="album_text_board">文字板</string>
+    <string name="album_input_hint">点击输入文字</string>
+    <string name="album_keyboard">键盘</string>
+    <string name="album_ttf">字体</string>
+    <string name="album_color">颜色</string>
+    <string name="album_background">背景</string>
+    <string name="album_align">对齐</string>
+
+    <!--媒体数量-->
+    <string name="album_error_media_num">媒体选择数量错误</string>
+
+    <!--退出提示-->
+    <string name="album_exit">退出</string>
+    <string name="album_give_up">确定放弃已经选中的媒体?</string>
+
+    <!--选中媒体类型-->
+    <string name="album_edit_menu_bg">背景</string>
+    <string name="album_edit_menu_pip">图层</string>
+    <string name="album_edit_menu_watermark">水印</string>
+
+</resources>

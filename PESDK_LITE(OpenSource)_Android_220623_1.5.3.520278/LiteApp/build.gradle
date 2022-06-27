@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+def releaseTime() {
+    return new Date().format("yyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+
+android {
+    compileSdkVersion compileSdkVer
+    buildToolsVersion buildToolsVer
+    defaultConfig {
+        applicationId "com.pesdklite.demo"
+        minSdkVersion minSdkVer
+        targetSdkVersion targetSdkVer
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled releaseMinify
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //指定打包后应用名称
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                output ->
+                    def outputFile = output.outputFile
+                    if (outputFile.exists()) {
+                        outputFile.deleteDir()
+                    }
+                    println "applicationVariants   outputFile:" + outputFile.toString()
+                    def fileName = "PESDK_Lite";
+                    //更改的输出路径
+                    if (outputFile.name.contains("release")) {
+                        fileName += "_release__${releaseTime()}" + '.apk'
+                    } else {
+                        fileName += '_debug_' + "${releaseTime()}" + '.apk'
+                    }
+                    outputFileName = fileName; //更改的输出文件名
+                    println "applicationVariants outputFileName:" + outputFileName + "  outputFile:" + outputFile.toString()
+            }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    //图片编辑
+    implementation project(':PEUISDK')
+    //相机
+    implementation project(':VECamera')
+    //相册
+    implementation project(':PEAlbum')
+ 
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+ 
+}

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pesdk_fragment_titlebar_bg"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_cutout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="@string/pesdk_cutout1"
+                android:textColor="@drawable/pesdk_bg_text_beauty"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/btn_cutout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="@string/pesdk_cutout2"
+                android:textColor="@drawable/pesdk_bg_text_beauty"
+                android:textSize="16dp" />
+        </RadioGroup>
+
+        <!--取消抠图-->
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/pesdk_btn_graffiti_revoke"
+            android:gravity="center_vertical"
+            android:text="@string/pesdk_cutout_cancel"
+            android:textColor="@color/pesdk_white"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <com.pesdk.uisdk.widget.CircleView
+                android:id="@+id/cv_color"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+
+            <TextView
+                android:id="@+id/tv_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textColor="@color/pesdk_transparent_white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <!--抠图精度-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/dp_40"
+            android:clipChildren="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pesdk_matting_upper" />
+
+            <com.pesdk.uisdk.widget.ExtSeekBar2
+                android:id="@+id/sb_degree_upper1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:clipChildren="false"
+                android:max="100"
+                android:maxWidth="1.5dp"
+                android:maxHeight="1.5dp"
+                android:minWidth="1.5dp"
+                android:minHeight="1.5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/pesdk_factor_progress"
+                android:thumb="@drawable/pesdk_music_factor_thumb"
+                android:thumbOffset="15dp"
+                />
+
+            <com.pesdk.uisdk.widget.ExtSeekBar2
+                android:id="@+id/sb_degree_upper2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:clipChildren="false"
+                android:max="100"
+                android:maxWidth="1.5dp"
+                android:maxHeight="1.5dp"
+                android:minWidth="1.5dp"
+                android:minHeight="1.5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/pesdk_factor_progress"
+                android:thumb="@drawable/pesdk_music_factor_thumb"
+                android:thumbOffset="15dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!--抠图精度-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/dp_40"
+            android:clipChildren="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pesdk_matting_lower" />
+
+            <com.pesdk.uisdk.widget.ExtSeekBar2
+                android:id="@+id/sb_degree_lower1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:clipChildren="false"
+                android:max="100"
+                android:maxWidth="1.5dp"
+                android:maxHeight="1.5dp"
+                android:minWidth="1.5dp"
+                android:minHeight="1.5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/pesdk_factor_progress"
+                android:thumb="@drawable/pesdk_music_factor_thumb"
+                android:thumbOffset="15dp" />
+
+            <com.pesdk.uisdk.widget.ExtSeekBar2
+                android:id="@+id/sb_degree_lower2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:clipChildren="false"
+                android:max="100"
+                android:maxWidth="1.5dp"
+                android:maxHeight="1.5dp"
+                android:minWidth="1.5dp"
+                android:minHeight="1.5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/pesdk_factor_progress"
+                android:thumb="@drawable/pesdk_music_factor_thumb"
+                android:thumbOffset="15dp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/pesdk_layout_bottom_menu" />
+
+</LinearLayout>

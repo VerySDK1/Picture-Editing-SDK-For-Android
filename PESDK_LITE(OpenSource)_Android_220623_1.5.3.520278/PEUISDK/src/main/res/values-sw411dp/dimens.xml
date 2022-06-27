@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="borderline_width2">2.2833dp</dimen>
+	<dimen name="card_fragment_height">205.5000dp</dimen>
+	<dimen name="materialcolorpicker__activity_horizontal_margin">18.2667dp</dimen>
+	<dimen name="materialcolorpicker__activity_vertical_margin">18.2667dp</dimen>
+	<dimen name="dimen_10">11.4167dp</dimen>
+	<dimen name="dimen_20">22.8333dp</dimen>
+	<dimen name="input_edit_parent_height">45.6667dp</dimen>
+	<dimen name="dimen_8">9.1333dp</dimen>
+	<dimen name="radius_sbar">1.7125dp</dimen>
+	<dimen name="fragment_bottom_titlebar_height">51.3750dp</dimen>
+	<dimen name="pesdk_child_menu_margin_bottom">3.4250dp</dimen>
+	<dimen name="pesdk_fragment_main_menu_height">171.2500dp</dimen>
+	<dimen name="pesdk_main_player_margin_tb">20.5500dp</dimen>
+	<dimen name="pesdk_rect_adjust_menu_size">51.3750dp</dimen>
+</resources>

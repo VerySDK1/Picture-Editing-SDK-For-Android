@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/titlebar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:splitMotionEvents="false">
+
+    <com.vecore.base.lib.ui.ExtButton
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_1"
+        android:background="@null"
+        android:drawableLeft="@drawable/pesdk_image_edit_back"
+        android:gravity="left|center_vertical" />
+
+    <com.vecore.base.lib.ui.ExtButton
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/pesdk_next"
+        android:textColor="@color/pesdk_main_color"
+        android:textSize="@dimen/text_size_16" />
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:gravity="center"
+        android:lines="1"
+        android:singleLine="true"
+        android:textColor="@drawable/pesdk_edit_menu_color"
+        android:textSize="@dimen/text_size_18"
+        tools:ignore="EllipsizeMaxLines" />
+
+</RelativeLayout>

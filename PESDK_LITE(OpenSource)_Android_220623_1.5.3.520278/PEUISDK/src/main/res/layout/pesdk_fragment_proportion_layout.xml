@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pesdk_child_fragment_bg"
+    android:orientation="vertical">
+
+
+    <com.pesdk.uisdk.widget.ReboundHScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ivProportionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <RadioGroup
+                android:id="@+id/rgCropProportionLine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCropOriginal"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_crop_original" />
+
+                <RadioButton
+                    android:id="@+id/rbCropFree"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_crop_free" />
+
+                <RadioButton
+                    android:id="@+id/rbProportion916"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_916" />
+
+
+                <RadioButton
+                    android:id="@+id/rbProportion169"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_169" />
+
+
+                <RadioButton
+                    android:id="@+id/rbProportion1x1"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_1x1" />
+
+
+                <RadioButton
+                    android:id="@+id/rbProportion67"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_67" />
+
+
+                <RadioButton
+                    android:id="@+id/rbProportion45"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_45" />
+
+
+                <RadioButton
+                    android:id="@+id/rbProportion43"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_43" />
+
+
+                <RadioButton
+                    android:id="@+id/rbProportion34"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_34" />
+
+
+                <RadioButton
+                    android:id="@+id/rbProportion23"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_23" />
+
+
+                <RadioButton
+                    android:id="@+id/rbProportion32"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_32" />
+
+
+                <RadioButton
+                    android:id="@+id/rbProportion12"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_12" />
+
+                <RadioButton
+                    android:id="@+id/rbProportion21"
+                    style="@style/pesdk_rb_proportion_style"
+                    android:background="@drawable/pesdk_proportion_21" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </com.pesdk.uisdk.widget.ReboundHScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:src="@drawable/pesdk_btn_bottom_cancel" />
+
+        <ImageButton
+            android:id="@+id/tvResetAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivCancel"
+            android:background="@null"
+            android:src="@drawable/pesdk_crop_reset"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pesdk_crop"
+            android:textColor="@color/pesdk_main_text_color_n"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/ivSure"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:src="@drawable/pesdk_btn_bottom_sure" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--已添加背景-->
+    <color name="flow_added_item">#8F8F8F</color>
+    <color name="flow_main_background">#FFFFFF</color>
+    <!--fragment线-->
+    <color name="flow_line">#EDEDED</color>
+
+</resources>

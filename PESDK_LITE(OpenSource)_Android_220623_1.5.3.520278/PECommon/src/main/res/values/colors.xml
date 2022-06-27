@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pesdk_black">#000000</color>
+    <color name="pesdk_white">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#E5004F</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="pesdk_white_divider">#33ffffff</color>
+
+
+    <color name="pesdk_main_bg">#f7f7f7</color>
+
+
+    <!-- 半透明黑色 -->
+    <color name="transparent_black1">#01000000</color>
+    <color name="transparent_black5">#05000000</color>
+    <color name="transparent_black10">#10000000</color>
+    <color name="transparent_black20">#33000000</color>
+    <color name="transparent_black50">#80000000</color>
+    <color name="transparent_black80">#CC000000</color>
+    <color name="transparent_black95">#F2000000</color>
+
+    <color name="pesdk_main_color">#9700ff</color>
+    <color name="pesdk_main_color_shadow">#659700ff</color>
+
+
+    <!-- 半透明白色 -->
+    <color name="transparent_white20">#33FFFFFF</color>
+    <color name="transparent_white50">#80FFFFFF</color>
+    <color name="transparent_white80">#CCFFFFFF</color>
+    <color name="transparent_white95">#F2FFFFFF</color>
+    <!-- 文字 -->
+    <color name="text_color">#3a3a3a</color>
+    <color name="text_color_level_2">#585858</color>
+    <!-- 选择弹窗 -->
+    <color name="common_dialog_back">#F4F4F4</color>
+    <color name="common_dialog_bg">#F4F4F4</color>
+    <color name="common_dialog_line">#CCD3D3D3</color>
+
+
+    <!-- 调色-->
+    <color name="pesdk_config_titlebar_bg">#DDDDDD</color>
+
+
+    <color name="pesdk_main_text_color_n">#3a3a3a</color>
+    <color name="pesdk_main_text_color_p">#3a3a3a</color>
+</resources>

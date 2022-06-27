@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PESDK LITE</string>
+    <string name="app_draft">Draft</string>
+
+    <string name="app_camera">1、Camera</string>
+    <string name="app_take_photo">(1) Take photo</string>
+    <string name="app_record">(2) Record</string>
+
+    <string name="app_pic_edit">2、Picture Edit</string>
+    <string name="app_pic_edit1">(1) Picture Edit</string>
+    <string name="app_pic_edit2">(2) Draft</string>
+
+    <string name="app_pic_flow">3、Picture Flow</string>
+    <string name="app_pic_flow1">(1) Picture Flow</string>
+    <string name="app_pic_flow2">(2) Draft</string>
+    <string name="app_draft_none">Draft is null</string>
+    <string name="app_export_size">Export Size</string>
+    <string name="app_save_to">Save to:%s</string>
+
+    <!--弹出 菜单-->
+    <string name="flow_menu_export">Export</string>
+    <string name="flow_menu_edit">Edit</string>
+    <string name="flow_menu_rename">Rename</string>
+    <string name="flow_menu_delete">Delete</string>
+    <string name="flow_menu_down">Download</string>
+
+
+    <string name="flow_update_time">Update at %s</string>
+    <string name="flow_update_time_hour">Updated %1$d Hours ago</string>
+    <string name="flow_update_time_seconds">Updated %1$d minutes ago</string>
+    <string name="flow_update_time_now">Updated at right now</string>
+
+    <string name="flow_clear_cache">Clear cache</string>
+    <string name="flow_clear_success">Clear complete</string>
+</resources>

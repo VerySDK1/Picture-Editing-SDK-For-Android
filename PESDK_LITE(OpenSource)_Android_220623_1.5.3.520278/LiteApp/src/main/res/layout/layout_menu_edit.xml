@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/menu_title"
+        android:text="@string/app_pic_edit" />
+
+    <View style="@style/menu_line" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <!--照片编辑-->
+        <LinearLayout
+            android:id="@+id/btnImageEdit"
+            style="@style/menu_item">
+
+            <TextView
+                style="@style/menu_item_title"
+                android:text="@string/app_pic_edit1" />
+
+            <ImageView style="@style/menu_arrow" />
+
+        </LinearLayout>
+
+        <View style="@style/menu_line_sub" />
+
+
+
+        <!--草稿箱-->
+        <LinearLayout
+            android:id="@+id/btnDraftEdit"
+            style="@style/menu_item">
+
+            <TextView
+                style="@style/menu_item_title"
+                android:text="@string/app_pic_edit2" />
+
+            <ImageView style="@style/menu_arrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

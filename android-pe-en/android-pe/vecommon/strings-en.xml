@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="common_sure">Confirm</string>
+    <string name="common_cancel">Cancel</string>
+    <!--Image description-->
+    <string name="common_desc">Image</string>
+    <!--Loading-->
+    <string name="common_loading">Loading&#8230;</string>
+    <string name="common_loading_error">Load fail&#8230;</string>
+
+    <!--Privilege-->
+    <string name="common_permission_title">Apply privilege needed</string>
+    <string name="common_permission_cancel">Cancel application</string>
+
+    <!--Network-->
+    <string name="common_check_network">No available network</string>
+    <string name="common_many_failures_url_none">Fail too much or address is null</string>
+    <string name="common_many_downloads_currently">Too much content download</string>
+    <string name="common_downloading">Downloading&#8230;</string>
+
+    <!--Popup-->
+    <string name="common_dialog_title">Soft reminder</string>
+    <string name="common_dialog_message_permission">Please open permission</string>
+    <string name="common_authorization">Authorize</string>
+    <string name="common_exit">Exit</string>
+
+</resources>

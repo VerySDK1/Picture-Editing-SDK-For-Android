@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rd="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pesdk_alert_progress_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <com.pesdk.uisdk.widget.CircleProgressBar
+        android:id="@+id/pbProgress"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        rd:extindetermiate="true"
+        rd:extindetermiateDrawable="@drawable/pesdk_spinner_black_48"
+        rd:extprogressDrawable="@drawable/pesdk_progress" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="SelectableText" />
+</LinearLayout>

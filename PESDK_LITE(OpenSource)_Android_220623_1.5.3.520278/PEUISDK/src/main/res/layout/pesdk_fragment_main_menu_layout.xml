@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pesdk_child_fragment_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_child_back"
+            android:layout_width="32dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_5"
+            android:background="@null"
+            android:src="@drawable/pesdk_child_back"
+            android:visibility="gone" />
+
+
+        <com.pesdk.uisdk.widget.ReboundHScrollView
+            android:id="@+id/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="@null"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/mMenuGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_replace"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_replace"
+                    android:text="@string/pesdk_replace"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_rect_adjust"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_rect_adjust"
+                    android:text="@string/pesdk_rect_adjust"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/btn_canvas"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_canvas_n"
+                    android:text="@string/pesdk_canvas" />
+
+
+                <TextView
+                    android:id="@+id/btn_koutu"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_koutu"
+                    android:text="@string/pesdk_koutu"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_sky"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_sky"
+                    android:text="@string/pesdk_sky"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_import"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_import_layer"
+                    android:text="@string/pesdk_import" />
+
+
+                <TextView
+                    android:id="@+id/btn_blur"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_blurry_gaussian_n"
+                    android:text="@string/pesdk_blur"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_text"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_text"
+                    android:text="@string/pesdk_text" />
+
+                <TextView
+                    android:id="@+id/btn_sticker"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_sticker"
+                    android:text="@string/pesdk_sticker" />
+
+                <TextView
+                    android:id="@+id/btn_overlay"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_overlay_n"
+                    android:text="@string/pesdk_overlay"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/btn_frame"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_frame"
+                    android:text="@string/pesdk_frame" />
+
+
+                <TextView
+                    android:id="@+id/btn_beauty"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_skin"
+                    android:text="@string/pesdk_beauty"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_filter"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_filter"
+                    android:text="@string/pesdk_filter" />
+
+                <TextView
+                    android:id="@+id/btn_adjust"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_filter_config"
+                    android:text="@string/pesdk_adjust"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_proportion"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_proportion"
+                    android:text="@string/pesdk_proportion" />
+
+                <TextView
+                    android:id="@+id/btn_crop"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_edit"
+                    android:text="@string/pesdk_crop"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_graffiti"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_graffiti"
+                    android:text="@string/pesdk_doodling" />
+
+
+                <TextView
+                    android:id="@+id/btn_dewatermark"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_watermark_delete"
+                    android:text="@string/pesdk_erase_pen"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/btn_mask"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_mask"
+                    android:text="@string/pesdk_mask"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/btn_depth"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_depth"
+                    android:text="@string/pesdk_depth"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_pip"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_pip"
+                    android:text="@string/pesdk_pip" />
+
+
+                <!--选中图层后 部分按钮调序展示-->
+                <TextView
+                    android:id="@+id/btn_text2"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_text"
+                    android:text="@string/pesdk_text" />
+
+                <TextView
+                    android:id="@+id/btn_sticker2"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_sticker"
+                    android:text="@string/pesdk_sticker" />
+
+                <TextView
+                    android:id="@+id/btn_overlay2"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_overlay_n"
+                    android:text="@string/pesdk_overlay"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/btn_frame2"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_frame"
+                    android:text="@string/pesdk_frame"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/btn_proportion2"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_proportion"
+                    android:text="@string/pesdk_proportion" />
+
+
+                <TextView
+                    android:id="@+id/btn_graffiti2"
+                    style="@style/pesdk_edit_menu"
+                    android:drawableTop="@drawable/pesdk_ic_graffiti"
+                    android:text="@string/pesdk_doodling" />
+
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_mosaic"
+                        style="@style/pesdk_edit_menu"
+                        android:drawableTop="@drawable/pesdk_ic_mosaic"
+                        android:text="@string/pesdk_mosaic"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/btn_watermark"
+                        style="@style/pesdk_edit_menu"
+                        android:drawableTop="@drawable/pesdk_ic_watermark"
+                        android:text="@string/pesdk_watermark"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/btn_smear"
+                        style="@style/pesdk_edit_menu"
+                        android:drawableTop="@drawable/pesdk_ic_smudge"
+                        android:text="@string/pesdk_paint"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/btn_aperture"
+                        style="@style/pesdk_edit_menu"
+                        android:drawableTop="@drawable/pesdk_ic_depthfield"
+                        android:text="@string/pesdk_aperture"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/btn_hdr"
+                        style="@style/pesdk_edit_menu"
+                        android:drawableTop="@drawable/pesdk_ic_hdr"
+                        android:text="@string/pesdk_hdr"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/btn_holy_light"
+                        style="@style/pesdk_edit_menu"
+                        android:drawableTop="@drawable/pesdk_ic_holy_light"
+                        android:text="@string/pesdk_holy_light"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.pesdk.uisdk.widget.ReboundHScrollView>
+    </LinearLayout>
+</LinearLayout>

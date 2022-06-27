@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pesdk_layer_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pop_add_pic"
+        style="@style/pesdk_pop_add_item"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:drawableLeft="@drawable/pesdk_pop_add_pic"
+        android:text="@string/pesdk_pic" />
+
+    <TextView
+        android:id="@+id/pop_add_overlay"
+        style="@style/pesdk_pop_add_item"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:drawableLeft="@drawable/pesdk_pop_add_overlay"
+        android:text="@string/pesdk_overlay" />
+
+    <TextView
+        android:id="@+id/pop_add_sticker"
+        style="@style/pesdk_pop_add_item"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:drawableLeft="@drawable/pesdk_pop_add_sticker"
+        android:text="@string/pesdk_sticker" />
+
+    <TextView
+        android:id="@+id/pop_add_text"
+        style="@style/pesdk_pop_add_item"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:drawableLeft="@drawable/pesdk_pop_add_text"
+        android:text="@string/pesdk_text" />
+
+</LinearLayout>

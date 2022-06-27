@@ -1,0 +1,47 @@
+﻿<resources>
+    <string name="app_name">PESDK</string>
+
+
+
+    <string name="album_camera_roll">Camera film</string>
+    <string name="album_all_video">All video</string>
+    <string name="album_all_photo">All image</string>
+    <string name="album_material_library">Material libary</string>
+    <string name="album_video">Video</string>
+    <string name="album_photo">Photo</string>
+    <string name="album_media_all">All</string>
+    <string name="album_text">Text</string>
+    <string name="album_all">Total</string>
+
+    <string name="album_next_step">Next</string>
+    <string name="album_select_media_hint">Please select media!</string>
+    <string name="album_media_not_found">Media not found</string>
+
+    <!--Preview-->
+    <string name="album_preview_error">Can not preview, please try again.</string>
+
+    <!--文字图片-->
+    <string name="album_text_board">Text board</string>
+    <string name="album_input_hint">Click to input text</string>
+    <string name="album_keyboard">Keyboard</string>
+    <string name="album_ttf">Font</string>
+    <string name="album_color">Color</string>
+    <string name="album_background">Background</string>
+    <string name="album_align">Align</string>
+
+    <!--Media amount-->
+    <string name="album_error_media_num">Wrong media number selected</string>
+
+    <!--Exit notice-->
+    <string name="album_exit">Exit</string>
+    <string name="album_give_up">Confirm to cancel selected media</string>
+
+    <!--Image description-->
+    <string name="desc">Image</string>
+
+
+    <string name="primary_media">Basemap</string>
+    <string name="pesdk_edit_menu_bg">Background</string>
+    <string name="pesdk_edit_menu_pip">Layer</string>
+    <string name="edit_menu_watermark">Watermark</string>
+</resources>

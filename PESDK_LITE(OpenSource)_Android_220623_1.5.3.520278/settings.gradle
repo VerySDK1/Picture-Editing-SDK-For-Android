@@ -1,0 +1,9 @@
+include ':LiteApp', ':VECore'
+
+//图片编辑
+include ':PECommon'
+include ':PEUISDK'
+include ':VECamera'
+include ':PEAlbum'
+include ':VEEngine'
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pesdk.album">
+
+    <!--写入-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--读取-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+
+        <activity
+            android:name=".uisdk.ui.activity.AlbumActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.main" />
+        <activity
+            android:name=".uisdk.ui.activity.PreviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.main" />
+        <!-- 文字图片 -->
+        <activity
+            android:name="com.pesdk.album.uisdk.ui.activity.TextBoardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.main"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+    </application>
+
+</manifest>

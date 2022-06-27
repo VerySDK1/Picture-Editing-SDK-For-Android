@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="album_main_bg">#f7f7f7</color>
+    <!--相册选择-->
+    <color name="album_title_bg">#f7f7f7</color>
+    <color name="album_title_bar_bg">#f7f7f7</color>
+    <color name="album_main">#9600FF</color>
+    <color name="album_gray">#333333</color>
+    <color name="album_line">#80afafaf</color>
+    <color name="album_item_bg">#ff202020</color>
+    <color name="album_item_bg_n">#0E0E0E</color>
+
+    <color name="album_fragment_bg">#FFFFFF</color>
+
+    <color name="album_bar">#ffffff</color>
+
+</resources>

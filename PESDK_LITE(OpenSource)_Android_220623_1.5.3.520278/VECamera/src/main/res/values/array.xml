@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  拍照快慢速  -->
+    <string-array name="camera_record_speed">
+        <item>极慢</item>
+        <item>慢</item>
+        <item>标准</item>
+        <item>快</item>
+        <item>极快</item>
+    </string-array>
+</resources>

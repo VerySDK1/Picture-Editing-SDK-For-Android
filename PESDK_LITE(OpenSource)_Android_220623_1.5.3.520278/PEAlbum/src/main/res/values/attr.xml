@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="AlbumColorPicker">
+        <attr name="isDrawCircle" format="boolean" />
+        <attr name="isDrawStrokeOnly" format="boolean" />
+        <attr name="isTextEdit" format="boolean" />
+    </declare-styleable>
+
+</resources>

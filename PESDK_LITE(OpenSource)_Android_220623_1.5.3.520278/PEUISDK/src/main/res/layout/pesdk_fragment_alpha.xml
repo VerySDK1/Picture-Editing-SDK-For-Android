@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pesdk_fragment_titlebar_bg"
+    android:clipChildren="false">
+
+    <com.pesdk.uisdk.widget.ExtSeekBar2
+        android:id="@+id/sb_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:clipChildren="false"
+        android:max="100"
+        android:maxWidth="1.5dp"
+        android:maxHeight="1.5dp"
+        android:minWidth="1.5dp"
+        android:minHeight="1.5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/pesdk_factor_progress"
+        android:thumb="@drawable/pesdk_music_factor_thumb"
+        android:thumbOffset="15dp" />
+
+    <include layout="@layout/pesdk_layout_bottom_menu" />
+
+</RelativeLayout>

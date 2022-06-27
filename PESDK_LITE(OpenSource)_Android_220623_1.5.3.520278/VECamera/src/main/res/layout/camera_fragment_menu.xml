@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.MenuFragment">
+
+    <!--顶部菜单-->
+    <RelativeLayout
+        android:id="@+id/menuTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/menuCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/common_desc"
+            android:src="@drawable/camera_ic_cancel" />
+
+        <!--音乐-->
+        <TextView
+            android:id="@+id/tvMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/camera_shape_arc_gray"
+            android:drawableEnd="@drawable/camera_ic_close"
+            android:gravity="center"
+            android:maxWidth="100dp"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:text="林俊杰-学不会.mp3"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menuMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/camera_ic_music"
+            android:drawablePadding="-3dp"
+            android:gravity="center_horizontal"
+            android:text="@string/camera_music"
+            android:textAllCaps="false"
+            android:textColor="@drawable/camera_selector_text"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/menuSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/camera_config_setting"
+            android:drawablePadding="-3dp"
+            android:gravity="center_horizontal"
+            android:text="@string/camera_config_setting"
+            android:textAllCaps="false"
+            android:textColor="@drawable/camera_selector_text"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/menuDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/camera_ic_delay_n"
+            android:drawablePadding="-3dp"
+            android:gravity="center_horizontal"
+            android:text="@string/camera_delay"
+            android:textAllCaps="false"
+            android:textColor="@drawable/camera_selector_text"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/menuFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/camera_flash"
+            android:drawablePadding="-3dp"
+            android:gravity="center_horizontal"
+            android:text="@string/camera_flash"
+            android:textAllCaps="false"
+            android:textColor="@drawable/camera_selector_text"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/menuSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/camera_btn_switch_camera"
+            android:drawablePadding="-3dp"
+            android:gravity="center_horizontal"
+            android:text="@string/camera_swtich"
+            android:textAllCaps="false"
+            android:textColor="@drawable/camera_selector_text"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <!--底部菜单-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!--显示文件-->
+        <RelativeLayout
+            android:id="@+id/tempMenu"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true">
+
+            <!--菜单切换-->
+            <com.vesdk.camera.widget.CustomMenuView
+                android:id="@+id/cusMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/btnSure"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/common_desc"
+                android:padding="10dp"
+                android:src="@drawable/camera_ic_sure"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/btnSure"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <!--  录制按钮  -->
+        <RelativeLayout
+            android:id="@+id/rlRecorder"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@id/tempMenu"
+            android:clipChildren="false">
+
+            <!--录制-->
+            <ImageView
+                android:id="@+id/btnCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:contentDescription="@string/common_desc"
+                android:enabled="false" />
+
+            <!--滤镜-->
+            <LinearLayout
+                android:id="@+id/menuLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/btnCamera"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/menuFilter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableTop="@drawable/camera_btn_filter"
+                    android:singleLine="true"
+                    android:text="@string/camera_filter"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/camera_selector_text"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <!--美颜-->
+            <LinearLayout
+                android:id="@+id/menuRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/btnCamera"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/menuBeauty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableTop="@drawable/camera_btn_beautify"
+                    android:singleLine="true"
+                    android:text="@string/camera_beauty"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/camera_selector_text"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--  快慢速  -->
+        <ImageView
+            android:id="@+id/menuSpeed"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_above="@id/rlRecorder"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/common_desc"
+            android:src="@drawable/camera_ic_speed_off"
+            android:text="@string/camera_shoot_speed" />
+
+        <LinearLayout
+            android:id="@+id/llSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@id/rlRecorder"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.vesdk.camera.widget.SpeedView
+                android:id="@+id/speed"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--录制时间-->
+    <RelativeLayout
+        android:id="@+id/rlTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvFps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/camera_shape_arc_gray"
+            android:drawableStart="@drawable/camera_ic_prompt_point"
+            android:drawablePadding="3dp"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="2dp"
+            android:text="12:00"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

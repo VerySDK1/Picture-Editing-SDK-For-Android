@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pesdk_main_bg"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/scrollVG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableStart="@drawable/pesdk_image_edit_back" />
+
+                <ImageView
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_toRightOf="@+id/back_btn"
+                    android:background="@null"
+                    android:src="@drawable/pesdk_ic_layer_un" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/btn_add"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btn_revoke"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:enabled="false"
+                        android:src="@drawable/pesdk_undo" />
+
+
+                    <ImageView
+                        android:id="@+id/btn_redo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_3"
+                        android:enabled="false"
+                        android:src="@drawable/pesdk_redo" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/btnExportTemplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:layout_toLeftOf="@+id/save_btn"
+                    android:background="@drawable/pesdk_bg_save_template"
+                    android:drawableLeft="@drawable/pesdk_save_template"
+                    android:gravity="center"
+                    android:text="@string/pesdk_export_template"
+                    android:textColor="@color/pesdk_main_color"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/save_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:background="@drawable/pesdk_bg_save_template"
+                    android:gravity="center"
+                    android:minWidth="@dimen/dp_60"
+                    android:text="@string/pesdk_save"
+                    android:textColor="@color/pesdk_main_color"
+                    android:textSize="@dimen/text_size_14" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/mainFragmentContainer"
+            app:layout_constraintTop_toBottomOf="@+id/scrollVG"
+            app:layout_constraintVertical_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/mainFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                android:id="@+id/depth_bar_layout"
+                layout="@layout/pesdk_depth_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginBottom="@dimen/dp_60"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/filter_value_layout"
+                layout="@layout/pesdk_filter_value_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/mainFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pesdk_fragment_main_menu_height"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- 子布局更高,方便操作UI-->
+    <LinearLayout
+        android:id="@+id/childRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/pesdk__frag_revoke_layout" />
+
+        <RelativeLayout
+            android:id="@+id/childFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_300" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

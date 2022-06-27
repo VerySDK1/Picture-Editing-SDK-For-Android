@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/pesdk_white"
+        android:textSize="@dimen/text_size_18" />
+
+    <ListView
+        android:id="@+id/lvContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/pesdk_dialog_corners_bg"
+        android:cacheColorHint="@color/pesdk_transparent"
+        android:divider="@drawable/pesdk_divider"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="false"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:listSelector="@color/pesdk_transparent" />
+
+    <com.vecore.base.lib.ui.ExtButton
+        android:id="@+id/btnAlertCancel"
+        style="@style/pesdk_list_alert_cancel_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/pesdk_dialog_corners_bg"
+        android:text="@string/pesdk_cancel" />
+</LinearLayout>

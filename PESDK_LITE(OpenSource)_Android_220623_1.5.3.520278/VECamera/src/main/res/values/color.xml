@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--录像 设置输出-->
+    <color name="camera_main">#2B2B33</color>
+    <color name="camera_main_title">#27262C</color>
+
+    <color name="camera_border">#00FFFFFF</color>
+
+    <color name="camera_item_bg">#ff202020</color>
+    <color name="camera_item_bg_n">#0E0E0E</color>
+
+    <color name="camera_menu_back_color">#33333B</color>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--强度-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_sbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45"
+    android:layout_centerVertical="true"
+    android:background="@drawable/pesdk_shape_alpha_layout_bg"
+    android:clipChildren="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pesdk_strength"
+        android:textColor="@color/pesdk_main_color"
+        android:textSize="@dimen/text_size_16" />
+
+    <SeekBar
+        android:id="@+id/sbarStrength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:max="100"
+        android:maxWidth="1.5dp"
+        android:maxHeight="1.5dp"
+        android:minWidth="1.5dp"
+        android:minHeight="1.5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:progress="100"
+        android:progressDrawable="@drawable/pesdk_music_factor_progress"
+        android:splitTrack="false"
+        android:thumb="@drawable/pesdk_bar_ic_thumb"
+        android:thumbOffset="15dp" />
+
+</LinearLayout>

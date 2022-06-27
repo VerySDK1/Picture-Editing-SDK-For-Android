@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="camera_shoot_speed">Fast slow speed</string>
+    <string name="camera_beauty">Beauty</string>
+    <string name="camera_filter">Filter</string>
+
+    <string name="camera_photo">Shoot</string>
+    <string name="camera_video">Record</string>
+
+    <!--Popup-->
+    <string name="camera_dialog_title">Soft reminder</string>
+    <string name="camera_dialog_message_permission">Please open privilege</string>
+    <string name="camera_dialog_message_give_up">Confirm to cancel the shoot media</string>
+    <string name="camera_authorization">Authorize</string>
+    <string name="camera_exit">Exit</string>
+
+    <!-- Limit -->
+    <string name="camera_duration_max">Maximum time limit of recording</string>
+    <string name="camera_duration_min">Minimum time of recording</string>
+
+    <!-- Error-->
+    <string name="camera_sd_not_enough_record">No enough memory, can not save</string>
+    <string name="camera_error_insert_gallery">Fail to insert album </string>
+    <string name="camera_error_permission_audio">Can not record voice, please open voice record right</string>
+    <string name="camera_error_permission_camera">Not allowed to use camera</string>
+    <string name="camera_error_permission_audio_prompt">Not allowed to record voice</string>
+    <string name="camera_error_code">Error code</string>
+    <string name="camera_error_path">Path error</string>
+
+    <!-- Beauty -->
+    <string name="camera_blue">Smooth skin</string>
+    <string name="camera_whitening">Brighten skin</string>
+    <string name="camera_ruddy">Ruddy</string>
+    <string name="camera_bigeye">Big eye</string>
+    <string name="camera_facelift">Thin face</string>
+    <string name="camera_five_senses">Facial features</string>
+
+
+    <string name="camera_config_setting">Setting</string>
+    <string name="camera_music">Music</string>
+    <string name="camera_delay">Count down</string>
+    <string name="camera_flash">Flash</string>
+    <string name="camera_swtich">Reverse</string>
+
+
+    <!--Record output-->
+    <string name="camera_record_bitrate">Code rate(kbps)</string>
+    <string name="camera_record_size">Resolution</string>
+    <string name="camera_record_volume">Microphone</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="camera_record_size_rb_style">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="camera_baseline_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#ebeef3</item>
+    </style>
+
+    <style name="camera_config_baseline_style" parent="@style/camera_baseline_style">
+        <item name="android:background">@color/transparent_black80</item>
+        <item name="android:layout_height">0.05dp</item>
+    </style>
+
+
+    <style name="camera_adjust_item_style">
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">55dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dp_10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/camera_selector_text</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="camera_filter_config_sbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">50</item>
+    </style>
+
+
+    <style name="camera_.tabTextAppearance" parent="@style/TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/pesdk_main_text_color_n</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="camera_TabLayout" parent="android:Widget.Material.Tab">
+        <!--背景色-->
+        <item name="tabBackground">@color/transparent</item>
+        <!--被选中时线的颜色-->
+        <item name="tabIndicatorColor">@color/transparent</item>
+        <!--线的高度-->
+        <item name="tabIndicatorHeight">3dp</item>
+        <!--文字默认属性-->
+        <item name="tabTextAppearance">@style/camera_.tabTextAppearance</item>
+        <!--选中的字体颜色-->
+        <item name="tabSelectedTextColor">@color/pesdk_main_color</item>
+        <!--取消按压阴影-->
+        <item name="tabRippleColor">@color/transparent</item>
+        <item name="tabMinWidth">@dimen/dp_40</item>
+    </style>
+</resources>

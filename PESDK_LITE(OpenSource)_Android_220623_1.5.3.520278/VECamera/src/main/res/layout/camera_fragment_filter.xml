@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.MenuFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:orientation="vertical">
+
+            <!--分类-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivNone"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="2dp"
+                    android:contentDescription="@string/common_desc"
+                    android:padding="4dp"
+                    android:src="@drawable/camera_ic_none_p" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--数据-->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_55"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:layout_marginRight="@dimen/dp_40"
+                android:clipChildren="false">
+
+                <ImageView
+                    android:id="@+id/ivReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/common_desc"
+                    android:src="@drawable/camera_reset"
+                    android:visibility="gone" />
+
+
+                <com.pesdk.widget.ExtSeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@id/ivReset"
+                    android:clipChildren="false"
+                    android:max="100"
+                    android:maxWidth="1.5dp"
+                    android:maxHeight="1.5dp"
+                    android:minWidth="1.5dp"
+                    android:minHeight="1.5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:progress="100"
+                    android:thumbOffset="15dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.vesdk.common.widget.loading.CustomLoadingView
+            android:id="@+id/customLoading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            app:pecom_bg_color="@color/transparent"
+            app:pecom_tv_color="@color/white" />
+
+    </FrameLayout>
+
+</LinearLayout>

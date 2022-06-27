@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/pesdk_main_player_margin_tb"
+        android:layout_marginBottom="@dimen/pesdk_main_player_margin_tb">
+
+        <com.vecore.VirtualImageView
+            android:id="@+id/mVirtualImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pesdk_main_bg" />
+
+        <com.vecore.base.lib.ui.PreviewFrameLayout
+            android:id="@+id/contentViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <!--涂鸦-->
+            <com.pesdk.uisdk.widget.doodle.DoodleView
+                android:id="@+id/custom_paint_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/linear_words"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <!--贴纸、字幕-->
+            <com.pesdk.uisdk.widget.edit.EditDragView
+                android:id="@+id/drag_sticker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+
+            <!--拾色器-->
+            <!--            <com.pesdk.uisdk.widget.ColorpickerView-->
+            <!--                android:id="@+id/color_picker"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_centerInParent="true"-->
+            <!--                android:visibility="gone" />-->
+
+
+        </com.vecore.base.lib.ui.PreviewFrameLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mPipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <!-- 确认中间线的组件-->
+    <com.pesdk.uisdk.widget.edit.DragBorderLineView
+        android:id="@+id/dblView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

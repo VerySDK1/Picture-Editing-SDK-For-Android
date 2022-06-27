@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pesdk_preview_margin">0dp</dimen>
+    <dimen name="pesdk_crop_min_side">45dp</dimen>
+    <dimen name="pesdk_crop_touch_tolerance">20dp</dimen>
+    <dimen name="pesdk_wp_selector_dash_length">4dp</dimen>
+    <dimen name="pesdk_wp_selector_off_length">4dp</dimen>
+    <dimen name="pesdk_crop_indicator_size">24dp</dimen>
+    <dimen name="pesdk_crop_aspect_text_size">15sp</dimen>
+
+</resources>

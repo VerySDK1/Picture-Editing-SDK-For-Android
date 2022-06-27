@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/album_main_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ViewStub
+        android:id="@+id/vsImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/album_stub_preview_image" />
+
+    <ViewStub
+        android:id="@+id/vsVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/album_stub_preview_video" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--关闭-->
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:contentDescription="@string/common_desc"
+            android:src="@drawable/pesdk_image_edit_back" />
+
+        <CheckBox
+            android:id="@+id/cbSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:button="@drawable/album_cb"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

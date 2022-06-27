@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/camera_main"
+    tools:context=".ui.activity.RecorderActivity">
+
+    <!--摄像头的父容器-->
+    <com.vecore.base.lib.ui.PreviewFrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/cameraParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- 手动聚焦-->
+        <com.vesdk.camera.widget.GlTouchView
+            android:id="@+id/glTouch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.vecore.base.lib.ui.PreviewFrameLayout>
+
+    <!--菜单布局-->
+    <FrameLayout
+        android:id="@+id/menuFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--二级菜单-->
+    <RelativeLayout
+        android:id="@+id/menuLevelTwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clipChildren="false" />
+
+    </RelativeLayout>
+
+    <!--倒计时-->
+    <TextView
+        android:id="@+id/tvWaiting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="120dp"
+        android:text=""
+        android:visibility="gone" />
+
+    <!--闸门-->
+    <include layout="@layout/camera_layout_gate" />
+
+</RelativeLayout>

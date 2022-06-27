@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45">
+
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pesdk_btn_bottom_cancel" />
+
+    <TextView
+        android:id="@+id/tvBottomTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@drawable/pesdk_edit_menu_color"
+        android:textSize="@dimen/text_size_16" />
+
+    <ImageView
+        android:id="@+id/ivSure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pesdk_btn_bottom_sure" />
+</RelativeLayout>

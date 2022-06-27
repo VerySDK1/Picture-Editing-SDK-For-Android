@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_fragment_height"
+    android:background="@color/pesdk_child_fragment_bg"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <include layout="@layout/pesdk_fragment_beauty_top_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <com.pesdk.uisdk.widget.ExtSeekBar2
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:clipChildren="false"
+            android:maxWidth="1.5dp"
+            android:maxHeight="1.5dp"
+            android:minWidth="1.5dp"
+            android:minHeight="1.5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/pesdk_factor_progress"
+            android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+            android:thumbOffset="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion compileSdkVer
+    buildToolsVersion buildToolsVer
+
+    defaultConfig {
+        minSdkVersion minSdkVer
+        targetSdkVersion targetSdkVer
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled releaseMinify
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    resourcePrefix 'common_'
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    api project(':VECore')
+
+    api 'androidx.appcompat:appcompat:1.3.1'
+    api 'com.google.android.material:material:1.4.0'
+    api 'androidx.constraintlayout:constraintlayout:2.1.0'
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //刷新
+    api 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    api 'com.github.bumptech.glide:glide:4.12.0'
+    api "jp.wasabeef:glide-transformations:3.2.0"
+    //webp
+    api 'com.github.zjupure:webpdecoder:2.0.4.12.0'
+
+    //retrofit
+    api('com.squareup.retrofit2:retrofit:2.9.0') {
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+        exclude group: 'com.squareup.okio', module: 'okio'
+    }
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.6.1'
+    api 'com.squareup.retrofit2:converter-gson:2.6.1'
+
+
+    api 'com.squareup.okio:okio:2.7.0'
+    api 'com.squareup.okhttp3:okhttp:4.8.1'
+
+
+
+    //Lifecycle
+    api "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+
+    //协程
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
+
+
+    //Recycler Adapter
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7'
+    api 'androidx.recyclerview:recyclerview:1.2.1'
+
+    // liveData
+    api "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+    //ReactiveStreams检测liveData流
+    api "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0"
+    //ViewModel
+    api "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+
+    //mmkv
+    api 'com.tencent:mmkv-static:1.2.10'
+    api 'com.getkeepsafe.relinker:relinker:1.4.4'
+
+    //Rxjava
+    api 'io.reactivex.rxjava2:rxjava:2.2.19'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+}

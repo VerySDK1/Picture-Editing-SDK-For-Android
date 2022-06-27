@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--描边-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:minWidth="45dp"
+        android:text="@string/pesdk_demark_paint"
+        android:textColor="@color/pesdk_child_main_text_color_n"
+        android:textSize="@dimen/text_size_14" />
+
+    <SeekBar
+        android:id="@+id/sbStrokeWdith"
+        style="@style/pesdk_sbar_base_style"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:maxHeight="@dimen/dp_3"
+        android:minHeight="@dimen/dp_3"
+        android:progress="50"
+        android:thumbOffset="15dp" />
+
+
+</LinearLayout>

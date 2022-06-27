@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PESDK LITE</string>
+    <string name="app_draft">草稿箱</string>
+    <string name="app_camera">1、相机</string>
+    <string name="app_take_photo">(1) 拍照</string>
+    <string name="app_record">(2) 拍摄</string>
+
+
+    <string name="app_pic_edit">2、图片编辑</string>
+    <string name="app_pic_edit1">(1) 图片编辑</string>
+    <string name="app_pic_edit2">(2) 草稿箱</string>
+
+    <string name="app_pic_flow">3、图片流动</string>
+    <string name="app_pic_flow1">(1) 图片流动</string>
+    <string name="app_pic_flow2">(2) 草稿箱</string>
+
+    <string name="app_draft_none">草稿为空</string>
+    <string name="app_export_size">导出分辨率</string>
+    <string name="app_save_to">保存到:%s</string>
+
+
+    <!--弹出 菜单-->
+    <string name="flow_menu_export">导出</string>
+    <string name="flow_menu_edit">编辑</string>
+    <string name="flow_menu_rename">重命名</string>
+    <string name="flow_menu_delete">删除</string>
+    <string name="flow_menu_down">下载</string>
+
+
+    <string name="flow_update_time">更新于 %s</string>
+    <string name="flow_update_time_hour">更新于 约%1$d小时前</string>
+    <string name="flow_update_time_seconds">更新于 %1$d分钟前</string>
+    <string name="flow_update_time_now">更新于 刚刚</string>
+
+    <string name="flow_clear_cache">清除缓存</string>
+    <string name="flow_clear_success">清除成功</string>
+</resources>

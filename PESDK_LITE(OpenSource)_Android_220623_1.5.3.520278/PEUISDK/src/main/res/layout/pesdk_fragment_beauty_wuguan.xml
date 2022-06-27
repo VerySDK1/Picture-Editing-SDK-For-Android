@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_fragment_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pesdk_child_fragment_bg"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/btn_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/pesdk_btn_bottom_sure" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/btn_sure"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:scrollbars="none">
+
+                <RadioGroup
+                    android:id="@+id/rg_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/btn_face_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/pesdk_beauty_face_shape"
+                        android:textColor="@drawable/pesdk_beauty_menu"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/btn_chin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/pesdk_beauty_chin"
+                        android:textColor="@drawable/pesdk_beauty_menu"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/btn_forehead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/pesdk_beauty_forehead"
+                        android:textColor="@drawable/pesdk_beauty_menu"
+                        android:textSize="16dp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/btn_nose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/pesdk_beauty_nose"
+                        android:textColor="@drawable/pesdk_beauty_menu"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/btn_smile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/pesdk_beauty_smile"
+                        android:textColor="@drawable/pesdk_beauty_menu"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/btn_eye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/pesdk_beauty_eye"
+                        android:textColor="@drawable/pesdk_beauty_menu"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/btn_mouth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/pesdk_beauty_mouth"
+                        android:textColor="@drawable/pesdk_beauty_menu"
+                        android:textSize="16dp" />
+
+                </RadioGroup>
+
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/pesdk_transparent20_white" />
+
+        <!--脸型-->
+        <RelativeLayout
+            android:id="@+id/rl_face_shape"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pesdk_beauty_face_shape"
+                    android:textColor="@color/pesdk_main_text_color_n"
+                    android:textSize="14dp" />
+
+                <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                    android:id="@+id/bar_face_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clipChildren="false"
+                    android:maxWidth="1.5dp"
+                    android:maxHeight="1.5dp"
+                    android:minWidth="1.5dp"
+                    android:minHeight="1.5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/pesdk_factor_progress"
+                    android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                    android:thumbOffset="15dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--下巴-->
+        <RelativeLayout
+            android:id="@+id/rl_chin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_chin_w"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pesdk_beauty_chin_width"
+                    android:textColor="@color/pesdk_main_text_color_n"
+                    android:textSize="14dp" />
+
+                <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                    android:id="@+id/bar_chin_w"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clipChildren="false"
+                    android:maxWidth="1.5dp"
+                    android:maxHeight="1.5dp"
+                    android:minWidth="1.5dp"
+                    android:minHeight="1.5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/pesdk_factor_progress"
+                    android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                    android:thumbOffset="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_chin_w"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pesdk_beauty_chin_height"
+                    android:textColor="@color/pesdk_main_text_color_n"
+                    android:textSize="14dp" />
+
+                <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                    android:id="@+id/bar_chin_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clipChildren="false"
+                    android:maxWidth="1.5dp"
+                    android:maxHeight="1.5dp"
+                    android:minWidth="1.5dp"
+                    android:minHeight="1.5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/pesdk_factor_progress"
+                    android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                    android:thumbOffset="15dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--额头-->
+        <RelativeLayout
+            android:id="@+id/rl_forehead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pesdk_beauty_forehead"
+                    android:textColor="@color/pesdk_main_text_color_n"
+                    android:textSize="14dp" />
+
+                <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                    android:id="@+id/bar_forehead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clipChildren="false"
+                    android:maxWidth="1.5dp"
+                    android:maxHeight="1.5dp"
+                    android:minWidth="1.5dp"
+                    android:minHeight="1.5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/pesdk_factor_progress"
+                    android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                    android:thumbOffset="15dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--鼻子-->
+        <RelativeLayout
+            android:id="@+id/rl_nose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_nose_w"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pesdk_beauty_nose_width"
+                    android:textColor="@color/pesdk_main_text_color_n"
+                    android:textSize="14dp" />
+
+                <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                    android:id="@+id/bar_nose_w"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clipChildren="false"
+                    android:maxWidth="1.5dp"
+                    android:maxHeight="1.5dp"
+                    android:minWidth="1.5dp"
+                    android:minHeight="1.5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/pesdk_factor_progress"
+                    android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                    android:thumbOffset="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_nose_w"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pesdk_beauty_nose_height"
+                    android:textColor="@color/pesdk_main_text_color_n"
+                    android:textSize="14dp" />
+
+                <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                    android:id="@+id/bar_nose_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clipChildren="false"
+                    android:maxWidth="1.5dp"
+                    android:maxHeight="1.5dp"
+                    android:minWidth="1.5dp"
+                    android:minHeight="1.5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/pesdk_factor_progress"
+                    android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                    android:thumbOffset="15dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--微笑-->
+        <RelativeLayout
+            android:id="@+id/rl_smile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pesdk_beauty_smile"
+                    android:textColor="@color/pesdk_main_text_color_n"
+                    android:textSize="14dp" />
+
+                <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                    android:id="@+id/bar_smile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clipChildren="false"
+                    android:maxWidth="1.5dp"
+                    android:maxHeight="1.5dp"
+                    android:minWidth="1.5dp"
+                    android:minHeight="1.5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/pesdk_factor_progress"
+                    android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                    android:thumbOffset="15dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--眼睛-->
+        <RelativeLayout
+            android:id="@+id/rl_eye"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_eye_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clipChildren="false"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pesdk_beauty_eye_tilt"
+                        android:textColor="@color/pesdk_main_text_color_n"
+                        android:textSize="14dp" />
+
+                    <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                        android:id="@+id/eye_tilt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:clipChildren="false"
+                        android:maxWidth="1.5dp"
+                        android:maxHeight="1.5dp"
+                        android:minWidth="1.5dp"
+                        android:minHeight="1.5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/pesdk_factor_progress"
+                        android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                        android:thumbOffset="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pesdk_beauty_eye_distance"
+                        android:textColor="@color/pesdk_main_text_color_n"
+                        android:textSize="14dp" />
+
+                    <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                        android:id="@+id/eye_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:clipChildren="false"
+                        android:maxWidth="1.5dp"
+                        android:maxHeight="1.5dp"
+                        android:minWidth="1.5dp"
+                        android:minHeight="1.5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/pesdk_factor_progress"
+                        android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                        android:thumbOffset="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_eye_1"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clipChildren="false"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pesdk_beauty_eye_width"
+                        android:textColor="@color/pesdk_main_text_color_n"
+                        android:textSize="14dp" />
+
+                    <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                        android:id="@+id/eye_size_w"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:clipChildren="false"
+                        android:maxWidth="1.5dp"
+                        android:maxHeight="1.5dp"
+                        android:minWidth="1.5dp"
+                        android:minHeight="1.5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/pesdk_factor_progress"
+                        android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                        android:thumbOffset="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pesdk_beauty_eye_height"
+                        android:textColor="@color/pesdk_main_text_color_n"
+                        android:textSize="14dp" />
+
+                    <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                        android:id="@+id/eye_size_h"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:clipChildren="false"
+                        android:maxWidth="1.5dp"
+                        android:maxHeight="1.5dp"
+                        android:minWidth="1.5dp"
+                        android:minHeight="1.5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/pesdk_factor_progress"
+                        android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                        android:thumbOffset="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--嘴巴-->
+        <RelativeLayout
+            android:id="@+id/rl_mouth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_mouth_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pesdk_beauty_mouth_upper"
+                        android:textColor="@color/pesdk_main_text_color_n"
+                        android:textSize="14dp" />
+
+                    <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                        android:id="@+id/mouth_upper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:clipChildren="false"
+                        android:maxWidth="1.5dp"
+                        android:maxHeight="1.5dp"
+                        android:minWidth="1.5dp"
+                        android:minHeight="1.5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/pesdk_factor_progress"
+                        android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                        android:thumbOffset="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pesdk_beauty_mouth_lower"
+                        android:textColor="@color/pesdk_main_text_color_n"
+                        android:textSize="14dp" />
+
+                    <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                        android:id="@+id/mouth_lower"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:clipChildren="false"
+                        android:maxWidth="1.5dp"
+                        android:maxHeight="1.5dp"
+                        android:minWidth="1.5dp"
+                        android:minHeight="1.5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/pesdk_factor_progress"
+                        android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                        android:thumbOffset="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_mouth_1"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:clipChildren="false"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pesdk_beauty_mouth_width"
+                    android:textColor="@color/pesdk_main_text_color_n"
+                    android:textSize="14dp" />
+
+                <com.pesdk.uisdk.beauty.widget.ExtSeekBar3
+                    android:id="@+id/mouth_width"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clipChildren="false"
+                    android:maxWidth="1.5dp"
+                    android:maxHeight="1.5dp"
+                    android:minWidth="1.5dp"
+                    android:minHeight="1.5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/pesdk_factor_progress"
+                    android:thumb="@drawable/pesdk_config_sbar_thumb_n"
+                    android:thumbOffset="15dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_menu"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/reduction"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="5dp"
+            android:src="@drawable/pesdk_beauty_reduction" />
+
+        <ImageView
+            android:id="@+id/contrast"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="5dp"
+            android:src="@drawable/pesdk_beauty_contrast" />
+
+        <ImageView
+            android:id="@+id/switch_face"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="5dp"
+            android:src="@drawable/pesdk_beauty_scan" />
+
+    </LinearLayout>
+
+</RelativeLayout>

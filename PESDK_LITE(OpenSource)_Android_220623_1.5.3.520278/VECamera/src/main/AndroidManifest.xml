@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vesdk.camera">
+
+    <!--网络-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录制音频 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application>
+        <!-- 相机界面 -->
+        <activity
+            android:name="com.vesdk.camera.ui.activity.RecorderActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.fullscreen" />
+        <!-- 相机输出配置 -->
+        <activity
+            android:name="com.vesdk.camera.ui.activity.RecorderConfigActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.fullscreen" />
+    </application>
+
+</manifest>

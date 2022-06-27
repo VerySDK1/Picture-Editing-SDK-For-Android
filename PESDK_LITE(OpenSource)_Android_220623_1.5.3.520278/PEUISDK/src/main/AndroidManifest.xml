@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pesdk.uisdk">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+
+        <activity
+            android:name=".ui.home.EditActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.main"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.pesdk.uisdk.beauty.BeautyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.main" />
+        <activity
+            android:name=".ui.home.ErasePenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.main" />
+        <activity
+            android:name=".ui.home.CropActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.main" />
+        <activity
+            android:name=".ui.home.segment.SegmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.main" />
+        <activity
+            android:name=".ui.card.CardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/pecommon_Theme.ve.main" />
+    </application>
+
+</manifest>

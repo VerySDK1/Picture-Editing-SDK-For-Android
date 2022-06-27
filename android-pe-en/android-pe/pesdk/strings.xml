@@ -1,0 +1,335 @@
+<resources>
+    <string name="pesdk_menu_template">模板配方</string>
+    <string name="pesdk_beauty">人像</string>
+    <string name="pesdk_segment">抠图</string>
+    <string name="pesdk_erase_pen">消除笔</string>
+    <string name="pesdk_filter">滤镜</string>
+    <string name="pesdk_proportion">比例</string>
+    <string name="pesdk_layer_merge">图层合并</string>
+    <string name="pesdk_layer_adjust">图层调整</string>
+    <string name="pesdk_crop">裁剪</string>
+    <string name="pesdk_text">文字</string>
+    <string name="pesdk_pip">图层</string>
+    <string name="pesdk_canvas">背景</string>
+    <string name="pesdk_sky">天空</string>
+    <string name="pesdk_import">加图</string>
+    <string name="pesdk_adjust">调色</string>
+    <string name="pesdk_background">背景</string>
+    <string name="pesdk_save">保存</string>
+    <string name="pesdk_sticker">素材</string>
+    <string name="pesdk_pic">图片</string>
+    <string name="pesdk_frame">边框</string>
+    <string name="pesdk_depth">景深</string>
+
+    <string name="pesdk_mosaic">马赛克</string>
+    <string name="pesdk_blur">模糊</string>
+    <string name="pesdk_aperture">光圈</string>
+    <string name="pesdk_hdr">HDR</string>
+    <string name="pesdk_holy_light">圣光</string>
+    <string name="pesdk_watermark">水印</string>
+
+
+    <string name="pesdk_strength">强度</string>
+
+
+    <string name="pesdk_materialcolorpicker__errHex">颜色值不正确</string>
+    <string name="pesdk_materialcolorpicker__btnSelectColor">选择</string>
+    <string name="pesdk_saving_image">图片保存中...</string>
+    <string name="pesdk_save_error">图片保存失败</string>
+    <string name="preview_error">暂时无法预览，请重试！</string>
+    <string name="pesdk_exit_without_save">编辑的图片还未保存,确认退出吗？</string>
+    <string name="pesdk_confirm">确认</string>
+    <string name="pesdk_cancel">取消</string>
+    <string name="pesdk_next">下一步</string>
+
+
+    <string name="pesdk_paint">涂抹</string>
+    <string name="pesdk_doodling">画笔</string>
+    <string name="pesdk_koutu">智能抠图</string>
+    <string name="pesdk_segment_ing">识别中</string>
+    <string name="pesdk_segment_faster">手动抠图</string>
+    <string name="pesdk_segment_rubber">\t橡皮擦</string>
+    <string name="pesdk_segment_reset">重置</string>
+
+
+    <string name="pesdk_segment_no_mask">尚未指定抠图区域,无法抠图</string>
+
+
+    <string name="pesdk_none">无</string>
+
+
+    <string name="pesdk_beauty_auto">一键美颜</string>
+    <string name="pesdk_fu_wuguan">五官</string>
+    <string name="pesdk_fu_blue">磨皮</string>
+    <string name="pesdk_fu_whitening">美白</string>
+    <string name="pesdk_fu_ruddy">红润</string>
+    <string name="pesdk_fu_freckle">祛斑</string>
+    <string name="pesdk_fu_bigeye">大眼</string>
+    <string name="pesdk_fu_facelift">瘦脸</string>
+
+
+    <!-- 美颜-->
+    <string name="face_recognition_failed">未检测到人脸</string>
+    <string name="pesdk_menu_layer">图层</string>
+
+
+    <string name="pesdk_toning_reset">还原</string>
+    <string name="pesdk_toning_diff">对比</string>
+    <string name="pesdk_toning_reset_msg">确认要重置吗?</string>
+    <string name="pesdk_toning_diff_msg">原始效果</string>
+
+    <string name="pesdk_filter_brightness">亮度</string>
+    <string name="pesdk_filter_contrast">对比度</string>
+    <string name="pesdk_filter_highlight">高光</string>
+    <string name="pesdk_filter_guanggan">光感</string>
+    <string name="pesdk_filter_shadow">阴影</string>
+    <string name="pesdk_filter_hese">褐色</string>
+    <string name="pesdk_filter_unknow">未知</string>
+
+
+    <string name="pesdk_filter_saturation">饱和度</string>
+    <string name="pesdk_filter_temperature">色温</string>
+    <string name="pesdk_filter_tone">色调</string>
+
+
+    <string name="pesdk_filter_keli">颗粒</string>
+    <string name="pesdk_filter_sharpness">锐度</string>
+    <string name="pesdk_filter_vignette">暗角</string>
+
+
+    <string name="pesdk_dialog_tips">温馨提示</string>
+    <string name="pesdk_sure">确定</string>
+    <string name="pesdk_cancel_all_changed">确定放弃所有操作？</string>
+
+
+    <string name="pesdk_mirror">镜像</string>
+
+
+    <string name="pesdk_please_check_network">没有可用的网络</string>
+    <string name="pesdk_dialog_download_ing">下载中...</string>
+    <string name="pesdk_dialog_loading_model">模型加载中...</string>
+    <string name="pesdk_download_thread_limit_msg">请耐心等待...</string>
+
+    <string name="pesdk_isloading">加载中....</string>
+
+    <string name="pesdk_loading">正在加载</string>
+    <string name="pesdk_process">正在处理</string>
+    <string name="pesdk_sub_hint">请输入文字</string>
+
+    <string name="pesdk_sub_menu_input">键盘</string>
+    <string name="pesdk_sub_menu_style">样式</string>
+    <string name="pesdk_sub_menu_bubble">素材</string>
+    <string name="pesdk_sub_menu_flower_word">花字</string>
+    <string name="pesdk_sub_menu_font">字体</string>
+
+    <!-- 字幕 -->
+    <string name="pesdk_text_style_bold">粗体</string>
+    <string name="pesdk_text_style_italic">斜体</string>
+    <string name="pesdk_text_style_b_line">下划线</string>
+    <string name="pesdk_subtitle_alpha">透明度</string>
+    <!--阴影-->
+    <string name="pesdk_radius">半径</string>
+    <string name="pesdk_subtitle_shadow_width">距离</string>
+
+    <string name="pesdk_demark_paint">画笔</string>
+    <string name="pesdk_subtitle_text">文本</string>
+    <string name="pesdk_subtitle_label">背景</string>
+    <string name="pesdk_subtitle_align">对齐</string>
+    <string name="pesdk_subtitle_text_padding">间距</string>
+
+    <string name="pesdk_line_spacing">行距</string>
+    <string name="pesdk_word_kerning">字距</string>
+
+
+    <string name="pesdk_subtitle_stroke">描边</string>
+
+
+    <string name="pesdk_default_ttf"> 默认字体</string>
+
+
+    <string name="pesdk_beauty_face_shape">脸型</string>
+    <string name="pesdk_beauty_chin">下巴</string>
+    <string name="pesdk_beauty_chin_width">下巴宽</string>
+    <string name="pesdk_beauty_chin_height">下巴高</string>
+    <string name="pesdk_beauty_forehead">额头</string>
+    <string name="pesdk_beauty_nose">鼻子</string>
+    <string name="pesdk_beauty_nose_width">鼻子宽</string>
+    <string name="pesdk_beauty_nose_height">鼻子高</string>
+    <string name="pesdk_beauty_smile">微笑</string>
+    <string name="pesdk_beauty_eye">眼睛</string>
+    <string name="pesdk_beauty_eye_tilt">倾斜</string>
+    <string name="pesdk_beauty_eye_distance">距离</string>
+    <string name="pesdk_beauty_eye_width">宽度</string>
+    <string name="pesdk_beauty_eye_height">高度</string>
+    <string name="pesdk_beauty_mouth">嘴巴</string>
+    <string name="pesdk_beauty_mouth_upper">上嘴唇</string>
+    <string name="pesdk_beauty_mouth_lower">下嘴唇</string>
+    <string name="pesdk_beauty_mouth_width">嘴巴宽</string>
+
+
+    <string name="pesdk_angle">角度</string>
+
+
+    <!-- 图层-->
+    <string name="pesdk_mixed_mode">混合模式</string>
+    <string name="pesdk_cutout">抠像</string>
+
+
+    <!-- 蒙版-->
+    <string name="pesdk_mask">形状/填充</string>
+    <string name="pesdk_emergence">羽化</string>
+    <string name="pesdk_mask_width">粗细</string>
+    <string name="pesdk_mask_line">线性</string>
+    <string name="pesdk_mask_parallel">镜面</string>
+    <string name="pesdk_mask_circle">圆形</string>
+    <string name="pesdk_mask_rectangle">矩形</string>
+    <string name="pesdk_mask_star">五角星</string>
+    <string name="pesdk_mask_love">爱心</string>
+    <string name="pesdk_mask_rect">四边形</string>
+    <string name="pesdk_inverse">反转</string>
+    <string name="pesdk_overlay">叠加</string>
+    <string name="pesdk_effect">特效</string>
+
+
+    <!-- 特效 -->
+
+
+    <string name="pesdk_import_compress" formatted="false">压缩中 %s</string>
+    <string name="pesdk_import_compress_multiple" formatted="false">压缩中\n%s (%d/%d)</string>
+
+
+    <!--画中画混合模式-->
+    <string name="pesdk_blend_screen">滤色</string>
+    <string name="pesdk_blend_darken">变暗</string>
+    <string name="pesdk_blend_overlay">叠加</string>
+    <string name="pesdk_blend_multiplay">正片叠放</string>
+    <string name="pesdk_blend_lighten">变亮</string>
+    <string name="pesdk_blend_hardlight">强光</string>
+    <string name="pesdk_blend_softlight">柔光</string>
+    <string name="pesdk_blend_linearburn">线性加深</string>
+    <string name="pesdk_blend_colorburn">颜色加深</string>
+    <string name="pesdk_blend_colordodge">颜色减淡</string>
+
+
+    <string name="pesdk_cutout_cancel">取消抠图</string>
+    <string name="pesdk_cutout1">抠像1</string>
+    <string name="pesdk_cutout2">抠像2</string>
+
+
+    <string name="pesdk_osd_rb_blur">高斯模糊</string>
+    <string name="pesdk_osd_rb_pixl">像素化</string>
+    <string name="pesdk_osd_rb_osd">去水印</string>
+
+    <string name="pesdk_dewatermark">去水印</string>
+    <string name="pesdk_scale_limit">已经缩放到阀值</string>
+    <string name="pesdk_layer_alpha">不透明度</string>
+
+
+    <string name="pesdk_doodle_rect">矩形</string>
+    <string name="pesdk_doodle_triangle">箭头</string>
+    <string name="pesdk_doodle_free">自由画笔</string>
+    <string name="pesdk_gallery">图库</string>
+    <string name="pesdk_range">景深</string>
+
+
+    <!--撤销还原提示-->
+    <string name="pesdk_edit_undo">撤销</string>
+    <string name="pesdk_edit_reduction">还原</string>
+    <!--操作动作-->
+    <string name="pesdk_prompt_delete">删除</string>
+    <string name="pesdk_prompt_add">增加</string>
+    <string name="pesdk_prompt_adjust">调整</string>
+
+
+    <string name="pesdk_toast_person_segment">请选择带人像的图片</string>
+    <string name="pesdk_toast_sky_segment">请选择带天空的图片</string>
+
+    <string name="pesdk_prompt_adjust_toning">调色</string>
+
+
+    <string name="pesdk_isDrafting">正在存入草稿箱....</string>
+    <!--自动保存提示-->
+
+    <string name="pesdk_adjust_guangxiao">光效</string>
+    <string name="pesdk_adjust_color">色彩</string>
+    <string name="pesdk_adjust_adjust">调节</string>
+
+
+    <!--模板-->
+    <string name="pesdk_export_template">导出模板</string>
+    <string name="pesdk_template_name">模板名称</string>
+    <string name="edit_num">%1$d/%2$d</string>
+    <string name="pesdk_template_description">模板描述</string>
+    <string name="pesdk_edit_name">请输入模板名称</string>
+    <string name="pesdk_edit_description">请输入您的模板描述</string>
+    <string name="pesdk_template_draft">剪辑草稿</string>
+    <string name="pesdk_draft_prompt">使用模板时允许编辑草稿</string>
+    <string name="pesdk_upload_species">上传分类</string>
+    <string name="pesdk_new_type">新建</string>
+    <string name="pesdk_hint_type">请输入创建分类</string>
+    <string name="pesdk_group_info">编组信息</string>
+    <string name="pesdk_media_info">媒体信息</string>
+
+
+    <string name="select_media_title_all">全部</string>
+    <string name="pesdk_template">剪同款</string>
+    <string name="template_none">模板为空，快去下载或者制作吧!</string>
+    <string name="upload_species">上传分类</string>
+
+    <string name="pesdk_zip_file">文件</string>
+    <string name="cover">封面</string>
+
+    <string name="export_template">导出模板</string>
+
+    <string name="pesdk_media_info_num">图片: %d   文字: %d </string>
+    <string name="cancel">取消</string>
+
+    <string name="pesdk_group">编组</string>
+    <string name="pesdk_group_none">无编组</string>
+    <string name="pesdk_group_num">编组%d</string>
+    <string name="pesdk_group_cancel">取消编组</string>
+    <string name="pesdk_snippet">片段</string>
+
+    <string name="pesdk_track_bg">背景</string>
+    <string name="pesdk_track_main">底图</string>
+    <string name="pesdk_edit_menu_pip">图层</string>
+    <string name="pesdk_edit_menu_text">文字</string>
+
+    <string name="pesdk_limit_none">不限</string>
+    <string name="pesdk_limit_video">仅视频</string>
+    <string name="pesdk_limit_picture">仅图片</string>
+
+    <string name="pesdk_error_locking">不能所有媒体都锁定</string>
+
+    <string name="pesdk_group_prompt_1">一个编组不能只选择图层</string>
+    <string name="pesdk_group_prompt_2">图层必须编组</string>
+
+
+    <string name="pesdk_narrator">旁白</string>
+    <string name="pesdk_character">角色</string>
+
+
+    <string name="error_parsing">解析错误</string>
+    <string name="begin_export_template">正在生成模板</string>
+    <string name="save_template_complete">保存模板完成!</string>
+    <string name="uploading">上传中...</string>
+    <string name="upload">上传</string>
+
+
+    <!--使用草稿-->
+    <string name="recovery_template">恢复模板中...</string>
+    <string name="replacing_resources">替换资源中...</string>
+    <string name="template_edit">图片编辑</string>
+    <string name="template_word">文字编辑</string>
+    <string name="template_draft">剪辑草稿</string>
+
+
+    <string name="screen">拍摄</string>
+    <string name="replace">替换</string>
+    <string name="preview_crop">裁切</string>
+    <string name="edit_draft">跳转编辑草稿?</string>
+    <string name="unknown_mistake">未知错误</string>
+
+    <string name="edit_menu_watermark">水印</string>
+
+</resources>

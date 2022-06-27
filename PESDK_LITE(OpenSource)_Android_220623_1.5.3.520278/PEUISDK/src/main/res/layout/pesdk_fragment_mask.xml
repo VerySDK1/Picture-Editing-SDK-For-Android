@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pesdk_child_fragment_bg"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mask_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    <LinearLayout
+        android:id="@+id/llEmergence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llBorderWidth"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pesdk_emergence"
+            android:textColor="@color/pesdk_child_main_text_color_n"
+            android:textSize="@dimen/text_size_14" />
+
+        <SeekBar
+            android:id="@+id/sbarStrength"
+            style="@style/pesdk_sbar_base_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:maxWidth="1.5dp"
+            android:maxHeight="1.5dp"
+            android:minWidth="1.5dp"
+            android:minHeight="1.5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progress="0"
+            android:thumbOffset="15dp" />
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBorderWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/colorBar"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:clipChildren="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pesdk_mask_width"
+            android:textColor="@color/pesdk_child_main_text_color_n"
+            android:textSize="@dimen/text_size_14" />
+
+        <SeekBar
+            android:id="@+id/sbarBorderWidth"
+            style="@style/pesdk_sbar_base_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:maxWidth="1.5dp"
+            android:maxHeight="1.5dp"
+            android:minWidth="1.5dp"
+            android:minHeight="1.5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progress="0"
+            android:thumbOffset="15dp" />
+
+        <TextView
+            android:id="@+id/tvBorderValue"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:text="0" />
+    </LinearLayout>
+
+    <com.pesdk.uisdk.widget.ColorBar
+        android:id="@+id/colorBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llMune"
+        app:hideNone="true" />
+
+    <RelativeLayout
+        android:id="@+id/llMune"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tvBottomTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/pesdk_main_text_color_n"
+            android:textSize="16.5dp" />
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pesdk_btn_bottom_cancel"
+            android:onClick="clickView" />
+
+        <CheckBox
+            android:id="@+id/rb_mask"
+            style="@style/pesdk_2_edit_menu"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_toRightOf="@+id/ivCancel"
+            android:button="@drawable/pesdk_mask_ic_invserse"
+            android:drawablePadding="-8dp"
+            android:text="@string/pesdk_inverse"
+            android:textColor="@drawable/pesdk_sub_menu_x_textcolor"
+            android:textSize="@dimen/text_size_12" />
+
+
+        <ImageView
+            android:id="@+id/ivSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pesdk_btn_bottom_sure"
+            android:onClick="clickView" />
+    </RelativeLayout>
+
+</RelativeLayout>

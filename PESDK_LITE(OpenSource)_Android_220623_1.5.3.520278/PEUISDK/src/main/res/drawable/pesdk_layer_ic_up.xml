@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/pesdk_layer_ic_up_p" android:state_enabled="false" />
+    <item android:drawable="@drawable/pesdk_layer_ic_up_n" />
+</selector>

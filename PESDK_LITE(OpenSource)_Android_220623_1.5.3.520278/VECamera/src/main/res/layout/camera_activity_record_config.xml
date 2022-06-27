@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/camera_main"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/camera_main_title"
+        android:splitMotionEvents="false">
+
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:contentDescription="@string/common_desc"
+            android:src="@drawable/camera_ic_cancel" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ellipsize="marquee"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:singleLine="true"
+            android:text="@string/camera_config_setting"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/recordParam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:background="@color/camera_main"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="0dp"
+                android:text="@string/camera_record_bitrate"
+                android:textColor="@color/transparent_white50"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/camera_menu_back_color"
+                android:orientation="vertical">
+
+                <com.pesdk.widget.ExtSeekBar
+                    android:id="@+id/sbBitrateBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@null"
+                    android:progressDrawable="@null"
+                    android:splitTrack="false"
+                    android:thumb="@null" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:text="400k"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:text="3000k"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:background="@color/camera_main"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="0dp"
+                android:text="@string/camera_record_volume"
+                android:textColor="@color/transparent_white50"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/camera_menu_back_color"
+                android:orientation="vertical">
+
+                <com.pesdk.widget.ExtSeekBar
+                    android:id="@+id/sbMicFactor"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@null"
+                    android:progressDrawable="@null"
+                    android:splitTrack="false"
+                    android:thumb="@null" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@color/camera_main"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="0dp"
+            android:text="@string/camera_record_size"
+            android:textColor="@color/transparent_white50"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/recordSizeRG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/camera_menu_back_color"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbSize360"
+                style="@style/camera_record_size_rb_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/transparent"
+                android:drawableTint="@color/pesdk_main_color"
+                android:text="360P" />
+
+            <View style="@style/camera_config_baseline_style" />
+
+            <RadioButton
+                android:id="@+id/rbSize480"
+                style="@style/camera_record_size_rb_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/transparent"
+                android:drawableTint="@color/pesdk_main_color"
+                android:text="480P" />
+
+            <View style="@style/camera_config_baseline_style" />
+
+            <RadioButton
+                android:id="@+id/rbSize720"
+                style="@style/camera_record_size_rb_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/transparent"
+                android:drawableTint="@color/pesdk_main_color"
+                android:text="720P" />
+
+            <View style="@style/camera_config_baseline_style" />
+
+            <RadioButton
+                android:id="@+id/rbSize1080"
+                style="@style/camera_record_size_rb_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/transparent"
+                android:drawableTint="@color/pesdk_main_color"
+                android:text="1080P" />
+
+            <View style="@style/camera_config_baseline_style" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

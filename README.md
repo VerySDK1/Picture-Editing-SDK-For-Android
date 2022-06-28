@@ -4,10 +4,14 @@ photo beauty, filters, stickers, text, and picture flow. And so on, it provides 
 Developers only need to call the core interface of the SDK to realize various picture edit effects, which greatly improves development efficiency,
 reduces costs, and enables their own application products to be quickly launched to the market.
 <p align="center" width="100%">
-    <img width="33%" src="http://verysdk.com/static/picture_edit/1-1.jpg"></img>
-    <img width="33%" src="http://verysdk.com/static/picture_edit/3-3.jpg"></img> 
-    <img width="33%" src="http://verysdk.com/static/picture_edit/6-1.jpg"></img> 
+    <img width="32%" src="http://verysdk.com/static/picture_edit/1-1.jpg"></img>
+    <img width="32%" src="http://verysdk.com/static/picture_edit/3-3.jpg"></img> 
+    <img width="32%" src="http://verysdk.com/static/picture_edit/6-1.jpg"></img> 
 </p>
+
+## SDK download
+      <td>module</td>
+[PESDK_LITE(OpenSource)_Android_220623_1.5.3.520278.zip](https://github.com/VerySDK1/Picture-Editing-SDK-For-Android/)
 
 ## SDK function introduction:
 <table> 

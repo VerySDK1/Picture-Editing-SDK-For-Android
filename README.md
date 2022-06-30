@@ -12,8 +12,8 @@ reduces costs, and enables their own application products to be quickly launched
 ## SDK download
 [PESDK_LITE(OpenSource)_Android_220623_1.5.3.520278.zip](https://github.com/VerySDK1/Picture-Editing-SDK-For-Android/blob/master/PESDK_LITE(OpenSource)_Android_220623_1.5.3.520278.zip)
 
-### Apply AppKey and APPSECRET
-1、 Contact offical website helpdesk by email-support@verysdk.com, provide package name, application name, company name and contactor name, waiting for helpdesk's reply.
+## Apply AppKey and APPSECRET
+1、 Contact offical website helpdesk by email support@verysdk.com, provide package name, application name, company name and contactor name, waiting for helpdesk's reply.
 
 2、 Helpdesk will authorize the temporary license within 3 working days, and reply email with AppKey and AppSecret.
 

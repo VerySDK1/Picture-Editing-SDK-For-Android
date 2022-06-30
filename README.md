@@ -14,6 +14,7 @@ reduces costs, and enables their own application products to be quickly launched
 
 ### Apply AppKey and APPSECRET
 1、 Contact offical website helpdesk by email-support@verysdk.com, provide package name, application name, company name and contactor name, waiting for helpdesk's reply.
+
 2、 Helpdesk will authorize the temporary license within 3 working days, and reply email with AppKey and AppSecret.
 
 ## SDK function introduction:

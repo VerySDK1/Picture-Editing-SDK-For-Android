@@ -10,7 +10,7 @@ reduces costs, and enables their own application products to be quickly launched
 </p>
 
 ## SDK download
-[PESDK_LITE(OpenSource)_Android_220623_1.5.3.520278.zip](https://github.com/VerySDK1/blob/master/Picture-Editing-SDK-For-Android/PESDK_LITE(OpenSource)_Android_220623_1.5.3.520278.zip)
+[PESDK_LITE(OpenSource)_Android_220623_1.5.3.520278.zip](https://github.com/VerySDK1/Picture-Editing-SDK-For-Android/blob/master/PESDK_LITE(OpenSource)_Android_220623_1.5.3.520278.zip)
 
 ## SDK function introduction:
 <table> 
